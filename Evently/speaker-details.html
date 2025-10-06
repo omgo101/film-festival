@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Speaker Details - Evently Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Jury & Team - HISFF 2025</title>
+  <meta name="description" content="Meet the jury members, festival directors, and team behind Hyderabad International Short Film Festival 2025">
+  <meta name="keywords" content="HISFF 2025, Hyderabad Short Film Festival, Jury, Festival Team, Directors">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -26,13 +26,133 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Evently
-  * Template URL: https://bootstrapmade.com/evently-bootstrap-events-template/
-  * Updated: Jul 19 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Additional CSS for this page -->
+  <style>
+    .team-section {
+      padding: 60px 0;
+    }
+    
+    .team-category {
+      margin-bottom: 50px;
+    }
+    
+    .team-member-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    
+    .team-member-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .member-image {
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    .member-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .team-member-card:hover .member-image img {
+      transform: scale(1.05);
+    }
+    
+    .member-info {
+      padding: 25px;
+    }
+    
+    .member-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #1a1a1a;
+    }
+    
+    .member-role {
+      color: #8B0000;
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .member-description {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    .member-social {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .member-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+    
+    .member-social a:hover {
+      background-color: #8B0000;
+      color: white;
+    }
+    
+    .role-badge {
+      display: inline-block;
+      background: #8B0000;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #8B0000;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    
+    .section-header h2:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #D4AF37;
+    }
+    
+    .section-header p {
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body class="speaker-details-page">
@@ -41,9 +161,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Evently</h1>
+        <h1 class="sitename">HISFF 2025</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -51,34 +170,17 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="speakers.html">Speakers</a></li>
+          <li><a href="speakers.html" class="active">Jury & Team</a></li>
           <li><a href="venue.html">Venue</a></li>
           <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="speaker-details.html" class="active">Speaker Details</a></li>
+              <li><a href="speaker-details.html">Speaker Details</a></li>
               <li><a href="tickets.html">Tickets</a></li>
               <li><a href="buy-tickets.html">Buy Tickets</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="terms.html">Terms</a></li>
               <li><a href="privacy.html">Privacy</a></li>
               <li><a href="404.html">404</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -94,243 +196,354 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/events/showcase-9.webp);">
+    <div class="page-title dark-background" style="background-image: url(https://images.unsplash.com/photo-1489599809505-fc6a1adf50e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80);">
       <div class="container position-relative">
-        <h1>Speaker Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>Jury & Festival Team</h1>
+        <p>Meet the distinguished jury members and the team behind Hyderabad International Short Film Festival 2025</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Speaker Details</li>
+            <li class="current">Jury & Team</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Speaker Details 2 Section -->
-    <section id="speaker-details-2" class="speaker-details-2 section">
-
+    <!-- Jury Section -->
+    <section id="jury" class="team-section">
       <div class="container">
-
-        <div class="row">
-
-          <!-- Speaker Overview -->
-          <div class="col-xl-4 col-lg-5">
-            <div class="speaker-profile-card">
-              <div class="profile-image-wrapper">
-                <img src="assets/img/events/speaker-7.webp" alt="Speaker" class="img-fluid">
-                <div class="speaker-status">
-                  <span class="status-badge keynote">
-                    <i class="bi bi-mic"></i>
-                    Keynote
-                  </span>
-                </div>
-              </div>
-
-              <div class="profile-content">
-                <h2 class="speaker-name">Michael Rodriguez</h2>
-                <p class="speaker-title">Director of Innovation Strategy</p>
-                <div class="speaker-company">
-                  <i class="bi bi-briefcase"></i>
-                  TechForward Solutions
-                </div>
-
-                <div class="connection-stats">
-                  <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Years Experience</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Sessions</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">200+</span>
-                    <span class="stat-label">Companies Advised</span>
-                  </div>
-                </div>
-
-                <div class="social-connections">
-                  <a href="#" class="social-btn linkedin">
-                    <i class="bi bi-linkedin"></i>
-                    <span>Connect</span>
-                  </a>
-                  <a href="#" class="social-btn twitter">
-                    <i class="bi bi-twitter-x"></i>
-                    <span>Follow</span>
-                  </a>
-                  <a href="#" class="social-btn website">
-                    <i class="bi bi-globe"></i>
-                    <span>Website</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Speaker Details -->
-          <div class="col-xl-8 col-lg-7">
-
-            <!-- Quote Section -->
-            <div class="speaker-highlight">
-              <div class="quote-container">
-                <div class="quote-icon">
-                  <i class="bi bi-chat-quote"></i>
-                </div>
-                <blockquote>
-                  "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore."
-                </blockquote>
-              </div>
-            </div>
-
-            <!-- Biography -->
-            <div class="speaker-biography">
-              <div class="section-header">
-                <h3>Speaker Biography</h3>
-                <div class="header-line"></div>
-              </div>
-
-              <div class="bio-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                <div class="expertise-areas">
-                  <h4>Areas of Expertise</h4>
-                  <div class="tags-list">
-                    <span class="expertise-tag">Digital Strategy</span>
-                    <span class="expertise-tag">Innovation Management</span>
-                    <span class="expertise-tag">Tech Leadership</span>
-                    <span class="expertise-tag">Business Transformation</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Session Schedule -->
-            <div class="session-schedule">
-              <div class="section-header">
-                <h3>Speaking Schedule</h3>
-                <div class="header-line"></div>
-              </div>
-
-              <div class="schedule-timeline">
-
-                <div class="timeline-item featured">
-                  <div class="timeline-marker">
-                    <div class="marker-dot keynote"></div>
-                  </div>
-                  <div class="timeline-content">
-                    <div class="session-tag keynote">Keynote Presentation</div>
-                    <h4 class="session-name">Future of Enterprise Innovation</h4>
-                    <div class="session-meta-grid">
-                      <div class="meta-item">
-                        <i class="bi bi-calendar-event"></i>
-                        <span>April 20, 2024</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-clock"></i>
-                        <span>9:30 - 10:30 AM</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>Grand Ballroom</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-people"></i>
-                        <span>500+ Attendees</span>
-                      </div>
-                    </div>
-                    <p class="session-summary">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
-                  </div>
-                </div>
-
-                <div class="timeline-item">
-                  <div class="timeline-marker">
-                    <div class="marker-dot workshop"></div>
-                  </div>
-                  <div class="timeline-content">
-                    <div class="session-tag workshop">Interactive Workshop</div>
-                    <h4 class="session-name">Building Innovation Culture</h4>
-                    <div class="session-meta-grid">
-                      <div class="meta-item">
-                        <i class="bi bi-calendar-event"></i>
-                        <span>April 20, 2024</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-clock"></i>
-                        <span>2:00 - 3:30 PM</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>Workshop Hall C</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-people"></i>
-                        <span>50 Participants</span>
-                      </div>
-                    </div>
-                    <p class="session-summary">Omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.</p>
-                  </div>
-                </div>
-
-                <div class="timeline-item">
-                  <div class="timeline-marker">
-                    <div class="marker-dot panel"></div>
-                  </div>
-                  <div class="timeline-content">
-                    <div class="session-tag panel">Panel Discussion</div>
-                    <h4 class="session-name">The Digital Transformation Roundtable</h4>
-                    <div class="session-meta-grid">
-                      <div class="meta-item">
-                        <i class="bi bi-calendar-event"></i>
-                        <span>April 21, 2024</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-clock"></i>
-                        <span>11:15 AM - 12:00 PM</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>Conference Room A</span>
-                      </div>
-                      <div class="meta-item">
-                        <i class="bi bi-people"></i>
-                        <span>150 Attendees</span>
-                      </div>
-                    </div>
-                    <p class="session-summary">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="speaker-cta">
-              <div class="cta-buttons">
-                <a href="#" class="btn-primary">
-                  <i class="bi bi-calendar-plus"></i>
-                  Add to My Schedule
-                </a>
-                <a href="#" class="btn-secondary">
-                  <i class="bi bi-arrow-left"></i>
-                  All Speakers
-                </a>
-                <a href="#" class="btn-outline">
-                  <i class="bi bi-share"></i>
-                  Share Profile
-                </a>
-              </div>
-            </div>
-
-          </div>
-
+        <div class="section-header">
+          <h2>Festival Jury</h2>
+          <p>Our distinguished panel of jury members who will evaluate the competitive short films</p>
         </div>
 
-      </div>
+        <div class="row gy-4">
+          <!-- Nagesh Kukunoor -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Nagesh Kukunoor">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Jury Member</span>
+                <h3 class="member-name">Nagesh Kukunoor</h3>
+                <span class="member-role">Writer & Director</span>
+                <p class="member-description">Acclaimed Indian filmmaker known for his unique storytelling in films like "Hyderabad Blues", "Iqbal", and "Dor". His work often explores social issues with sensitivity and depth.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    </section><!-- /Speaker Details 2 Section -->
+          <!-- Naga Ashwin -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Naga Ashwin">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Jury Member</span>
+                <h3 class="member-name">Naga Ashwin</h3>
+                <span class="member-role">Writer & Director</span>
+                <p class="member-description">Visionary Telugu filmmaker recognized for his innovative approach to cinema. Known for pushing creative boundaries while maintaining strong narrative structures in his films.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nasser -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Nasser">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Jury Member</span>
+                <h3 class="member-name">Nasser</h3>
+                <span class="member-role">Actor, Director, President of Nadigar Sangam</span>
+                <p class="member-description">Veteran Indian actor with a career spanning decades across multiple languages. Known for his powerful performances and contributions to cinema as both artist and industry leader.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tharun Bhaskar -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Tharun Bhaskar">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Jury Member</span>
+                <h3 class="member-name">Tharun Bhaskar</h3>
+                <span class="member-role">Writer & Director</span>
+                <p class="member-description">Emerging filmmaker known for his fresh perspective and innovative storytelling techniques. His work demonstrates a unique blend of traditional narratives with contemporary themes.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Revathi -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Revathi">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Jury Member</span>
+                <h3 class="member-name">Revathi</h3>
+                <span class="member-role">Actor, Writer, Director</span>
+                <p class="member-description">Renowned Indian actress and filmmaker known for her powerful performances and directorial ventures. A strong advocate for women in cinema and meaningful storytelling.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manju Borah -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Manju Borah">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Jury Member</span>
+                <h3 class="member-name">Manju Borah</h3>
+                <span class="member-role">Writer & Director</span>
+                <p class="member-description">Award-winning Assamese filmmaker known for her sensitive portrayal of human relationships and social issues. Her films have received critical acclaim at national and international festivals.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Festival Directors Section -->
+    <section id="directors" class="team-section" style="background-color: #f8f9fa;">
+      <div class="container">
+        <div class="section-header">
+          <h2>Festival Directors</h2>
+          <p>The visionary leaders driving the Hyderabad International Short Film Festival</p>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Dil Raju -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Dil Raju">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Chief Festival Director</span>
+                <h3 class="member-name">Dil Raju</h3>
+                <span class="member-role">Chairman of Telangana Film Development Corporation</span>
+                <p class="member-description">Prominent film producer and distributor in the Telugu cinema industry. As Chairman of TFDC, he brings extensive industry experience and vision to the festival's leadership.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Madhu Mahankali -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Madhu Mahankali">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Festival Director</span>
+                <h3 class="member-name">Madhu Mahankali</h3>
+                <span class="member-role">Festival Director</span>
+                <p class="member-description">Seasoned festival organizer with expertise in curating film programs and managing large-scale cultural events. Brings creative vision and operational excellence to the festival.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- C. Nandan Babu -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="C. Nandan Babu">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Festival Director</span>
+                <h3 class="member-name">C. Nandan Babu</h3>
+                <span class="member-role">Festival Director</span>
+                <p class="member-description">Experienced cultural event manager with a focus on film festivals. Specializes in programming, partnerships, and creating engaging audience experiences.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vanaja -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Vanaja">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Festival Director</span>
+                <h3 class="member-name">Vanaja</h3>
+                <span class="member-role">Festival Director</span>
+                <p class="member-description">Dynamic festival programmer with expertise in regional cinema and emerging talent. Focuses on creating inclusive platforms for diverse voices in filmmaking.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rupa Devi -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Rupa Devi">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Festival Coordinator</span>
+                <h3 class="member-name">Rupa Devi</h3>
+                <span class="member-role">Festival Coordinator</span>
+                <p class="member-description">Detail-oriented coordinator with expertise in event logistics and participant management. Ensures smooth operations and excellent experience for all festival attendees.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heshvanth Gurukul -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Heshvanth Gurukul">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Festival Coordinator</span>
+                <h3 class="member-name">Heshvanth Gurukul</h3>
+                <span class="member-role">Festival Coordinator</span>
+                <p class="member-description">Skilled coordinator with background in film education and festival programming. Focuses on filmmaker relations and educational components of the festival.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Festival Advisors Section -->
+    <section id="advisors" class="team-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Festival Advisors</h2>
+          <p>Our esteemed advisory board providing guidance and expertise</p>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Vijyendra Prasad -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Vijyendra Prasad">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Advisor</span>
+                <h3 class="member-name">Vijyendra Prasad</h3>
+                <span class="member-role">Rajya Sabha MP, Writer & Director</span>
+                <p class="member-description">Renowned screenwriter and director with extensive experience in Indian cinema. Brings valuable industry insights and policy perspective to the festival advisory board.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tanu Roy -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Tanu Roy">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Advisor</span>
+                <h3 class="member-name">Tanu Roy</h3>
+                <span class="member-role">Deputy Director, Directorate of Film Festivals, Govt. of India</span>
+                <p class="member-description">Experienced film festival administrator with deep knowledge of national and international film circuits. Provides strategic guidance on festival programming and operations.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prakash Reddy -->
+          <div class="col-xl-4 col-lg-6">
+            <div class="team-member-card">
+              <div class="member-image">
+                <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Prakash Reddy">
+              </div>
+              <div class="member-info">
+                <span class="role-badge">Advisor</span>
+                <h3 class="member-name">Prakash Reddy</h3>
+                <span class="member-role">President, Hyderabad Film Club</span>
+                <p class="member-description">Long-time promoter of film culture in Hyderabad with extensive connections in the regional film community. Provides local insights and audience development strategies.</p>
+                <div class="member-social">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -340,13 +553,12 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Evently</span>
+            <span class="sitename">HISFF 2025</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Prasad’s Multiplex</p>
+            <p>Hyderabad, Telangana</p>
+            <p class="mt-3"><strong>Email:</strong> <span>info@hisff.in</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -359,44 +571,28 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="speakers.html">Jury &amp; Team</a></li>
+            <li><a href="venue.html">Venue</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Programme</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="schedule.html">Competitive / Non‑Competitive</a></li>
+            <li><a href="schedule.html">North East Pavilion</a></li>
+            <li><a href="schedule.html">Retrospectives</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
+          <h4>Get Involved</h4>
           <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li><a href="tickets.html">Buy Tickets</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
@@ -404,14 +600,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">HISFF 2025</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
     </div>
 
   </footer>

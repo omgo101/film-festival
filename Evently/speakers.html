@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Speakers - Evently Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Jury & Festival Team – Hyderabad International Short Film Festival 2025</title>
+  <meta name="description" content="Official jury, advisors, festival directors, presenters and prize details for Hyderabad International Short Film Festival 2025.">
+  <meta name="keywords" content="Hyderabad Short Film Festival 2025, Jury, Advisors, Festival Team, Prizes, Venue, Program">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700;900&family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,23 +27,33 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Evently
-  * Template URL: https://bootstrapmade.com/evently-bootstrap-events-template/
-  * Updated: Jul 19 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
+  * Template: Evently – adapted for Hyderabad International Short Film Festival 2025
+  * Updated: Oct 06, 2025
+  * Author: You + ChatGPT
   ======================================================== -->
+  <style>
+    .section-title h2 { font-weight: 800; letter-spacing: .5px; }
+    .person-card { background: var(--surface-color, #111); border-radius: 16px; padding: 18px; height: 100%; box-shadow: 0 6px 24px rgba(0,0,0,.15); }
+    .person-meta { display: flex; gap: 16px; align-items: center; }
+    .person-meta img { width: 88px; height: 88px; object-fit: cover; border-radius: 12px; }
+    .person-name { margin: 0; font-weight: 800; font-size: 1.15rem; }
+    .person-title { display: block; opacity: .85; font-size: .95rem; }
+    .badge-track { display: inline-block; margin-top: 8px; padding: 4px 10px; border-radius: 999px; font-size: .75rem; background: rgba(255,255,255,.08); }
+    .grid-gap { row-gap: 22px; }
+    .list-check li { margin-bottom: 10px; }
+    .dark-background .page-overlay { backdrop-filter: blur(1px); background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.6)); border-radius: 18px; padding: 10px 16px; display: inline-block; }
+    .soft-card { border-radius: 16px; background: rgba(255,255,255,.04); padding: 18px; }
+  </style>
 </head>
 
 <body class="speakers-page">
 
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Evently</h1>
+        <h1 class="sitename">HISFF 2025</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -51,11 +61,10 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="speakers.html" class="active">Speakers</a></li>
+          <li><a href="speakers.html" class="active">Jury & Team</a></li>
           <li><a href="venue.html">Venue</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="speaker-details.html">Speaker Details</a></li>
               <li><a href="tickets.html">Tickets</a></li>
               <li><a href="buy-tickets.html">Buy Tickets</a></li>
               <li><a href="gallery.html">Gallery</a></li>
@@ -64,29 +73,12 @@
               <li><a href="404.html">404</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="buy-tickets.html">Buy Tickets</a>
+      <a class="btn-getstarted" href="buy-tickets.html">Buy Pass</a>
 
     </div>
   </header>
@@ -96,296 +88,339 @@
     <!-- Page Title -->
     <div class="page-title dark-background" style="background-image: url(assets/img/events/showcase-9.webp);">
       <div class="container position-relative">
-        <h1>Speakers</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <div class="page-overlay mb-2"><small>Hyderabad International Short Film Festival <strong>2025</strong></small></div>
+        <h1>Jury & Festival Team</h1>
+        <p>Meet the jury, advisors and the core team behind the festival. Explore prizes, program highlights and venue details.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Speakers</li>
+            <li class="current">Jury & Team</li>
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
-    <!-- Speakers Section -->
-    <section id="speakers" class="speakers section">
-
+    <!-- Jury Section -->
+    <section id="jury" class="section">
       <div class="container">
+        <div class="section-title">
+          <h2>Festival Jury</h2>
+          <p>The jury brings decades of cinematic craft across writing, direction and performance.</p>
+        </div>
+        <div class="row grid-gap">
 
-        <div class="speakers-list">
-
-          <div class="row">
-
-            <div class="col-lg-6 speaker-entry">
-              <div class="speaker-profile">
-                <div class="speaker-meta">
-                  <div class="speaker-photo">
-                    <img src="assets/img/events/speaker-4.webp" alt="Speaker" class="img-fluid">
-                  </div>
-                  <div class="speaker-info">
-                    <h4>Jennifer Walsh</h4>
-                    <span class="speaker-position">Senior Data Scientist</span>
-                    <span class="speaker-org">DataVision Labs</span>
-                    <div class="speaker-track">Machine Learning</div>
-                  </div>
-                </div>
-                <div class="speaker-details">
-                  <div class="speaker-topic">
-                    <i class="bi bi-mic"></i>
-                    <span>Advanced Neural Networks in Real-World Applications</span>
-                  </div>
-                  <p class="speaker-summary">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit voluptate.</p>
-                  <div class="speaker-actions">
-                    <a href="#" class="profile-btn">Full Biography</a>
-                    <div class="speaker-social">
-                      <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                      <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
+          <!-- Jury cards: photos are placeholders; replace with real images in assets/img/jury/*.webp -->
+          <div class="col-md-6 col-lg-4">
+            <div class="person-card">
+              <div class="person-meta">
+                <img src="assets/img/jury/nagesh-kukunoor.webp" alt="Nagesh Kukunoor">
+                <div>
+                  <h3 class="person-name">Nagesh Kukunoor</h3>
+                  <span class="person-title">Writer • Director</span>
+                  <span class="badge-track">Jury</span>
                 </div>
               </div>
-            </div><!-- End Speaker Entry -->
+            </div>
+          </div>
 
-            <div class="col-lg-6 speaker-entry">
-              <div class="speaker-profile">
-                <div class="speaker-meta">
-                  <div class="speaker-photo">
-                    <img src="assets/img/events/speaker-1.webp" alt="Speaker" class="img-fluid">
-                  </div>
-                  <div class="speaker-info">
-                    <h4>Marcus Thompson</h4>
-                    <span class="speaker-position">Blockchain Architect</span>
-                    <span class="speaker-org">CryptoTech Solutions</span>
-                    <div class="speaker-track">Technology</div>
-                  </div>
-                </div>
-                <div class="speaker-details">
-                  <div class="speaker-topic">
-                    <i class="bi bi-mic"></i>
-                    <span>Decentralized Finance: Building the Future</span>
-                  </div>
-                  <p class="speaker-summary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
-                  <div class="speaker-actions">
-                    <a href="#" class="profile-btn">Full Biography</a>
-                    <div class="speaker-social">
-                      <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                      <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="person-card">
+              <div class="person-meta">
+                <img src="assets/img/jury/naga-ashwin.webp" alt="Naga Ashwin">
+                <div>
+                  <h3 class="person-name">Naga Ashwin</h3>
+                  <span class="person-title">Writer • Director</span>
+                  <span class="badge-track">Jury</span>
                 </div>
               </div>
-            </div><!-- End Speaker Entry -->
+            </div>
+          </div>
 
-            <div class="col-lg-6 speaker-entry">
-              <div class="speaker-profile">
-                <div class="speaker-meta">
-                  <div class="speaker-photo">
-                    <img src="assets/img/events/speaker-5.webp" alt="Speaker" class="img-fluid">
-                  </div>
-                  <div class="speaker-info">
-                    <h4>Dr. Sophia Chen</h4>
-                    <span class="speaker-position">Innovation Director</span>
-                    <span class="speaker-org">FutureTech Institute</span>
-                    <div class="speaker-track">Innovation</div>
-                  </div>
-                </div>
-                <div class="speaker-details">
-                  <div class="speaker-topic">
-                    <i class="bi bi-mic"></i>
-                    <span>Sustainable Technology Solutions for Tomorrow</span>
-                  </div>
-                  <p class="speaker-summary">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores.</p>
-                  <div class="speaker-actions">
-                    <a href="#" class="profile-btn">Full Biography</a>
-                    <div class="speaker-social">
-                      <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                      <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="person-card">
+              <div class="person-meta">
+                <img src="assets/img/jury/nasser.webp" alt="Nasser">
+                <div>
+                  <h3 class="person-name">Nasser</h3>
+                  <span class="person-title">Actor • Director • President, Nadigar Sangam</span>
+                  <span class="badge-track">Jury</span>
                 </div>
               </div>
-            </div><!-- End Speaker Entry -->
+            </div>
+          </div>
 
-            <div class="col-lg-6 speaker-entry">
-              <div class="speaker-profile">
-                <div class="speaker-meta">
-                  <div class="speaker-photo">
-                    <img src="assets/img/events/speaker-10.webp" alt="Speaker" class="img-fluid">
-                  </div>
-                  <div class="speaker-info">
-                    <h4>Robert Martinez</h4>
-                    <span class="speaker-position">UX Research Lead</span>
-                    <span class="speaker-org">Design Collective</span>
-                    <div class="speaker-track">Design</div>
-                  </div>
-                </div>
-                <div class="speaker-details">
-                  <div class="speaker-topic">
-                    <i class="bi bi-mic"></i>
-                    <span>Human-Centered Design in Digital Products</span>
-                  </div>
-                  <p class="speaker-summary">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-                  <div class="speaker-actions">
-                    <a href="#" class="profile-btn">Full Biography</a>
-                    <div class="speaker-social">
-                      <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                      <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="person-card">
+              <div class="person-meta">
+                <img src="assets/img/jury/tharun-bhascker.webp" alt="Tharun Bhaskar">
+                <div>
+                  <h3 class="person-name">Tharun Bhaskar</h3>
+                  <span class="person-title">Writer • Director</span>
+                  <span class="badge-track">Jury</span>
                 </div>
               </div>
-            </div><!-- End Speaker Entry -->
+            </div>
+          </div>
 
-            <div class="col-lg-6 speaker-entry">
-              <div class="speaker-profile">
-                <div class="speaker-meta">
-                  <div class="speaker-photo">
-                    <img src="assets/img/events/speaker-13.webp" alt="Speaker" class="img-fluid">
-                  </div>
-                  <div class="speaker-info">
-                    <h4>Amanda Foster</h4>
-                    <span class="speaker-position">Growth Strategist</span>
-                    <span class="speaker-org">ScaleUp Partners</span>
-                    <div class="speaker-track">Business</div>
-                  </div>
-                </div>
-                <div class="speaker-details">
-                  <div class="speaker-topic">
-                    <i class="bi bi-mic"></i>
-                    <span>Scaling Digital Businesses in 2024</span>
-                  </div>
-                  <p class="speaker-summary">Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique sunt.</p>
-                  <div class="speaker-actions">
-                    <a href="#" class="profile-btn">Full Biography</a>
-                    <div class="speaker-social">
-                      <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                      <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="person-card">
+              <div class="person-meta">
+                <img src="assets/img/jury/revathi.webp" alt="Revathi">
+                <div>
+                  <h3 class="person-name">Revathi</h3>
+                  <span class="person-title">Actor • Writer • Director</span>
+                  <span class="badge-track">Jury</span>
                 </div>
               </div>
-            </div><!-- End Speaker Entry -->
+            </div>
+          </div>
 
-            <div class="col-lg-6 speaker-entry">
-              <div class="speaker-profile">
-                <div class="speaker-meta">
-                  <div class="speaker-photo">
-                    <img src="assets/img/events/speaker-14.webp" alt="Speaker" class="img-fluid">
-                  </div>
-                  <div class="speaker-info">
-                    <h4>Kevin Park</h4>
-                    <span class="speaker-position">Digital Marketing Expert</span>
-                    <span class="speaker-org">Growth Agency Pro</span>
-                    <div class="speaker-track">Marketing</div>
-                  </div>
-                </div>
-                <div class="speaker-details">
-                  <div class="speaker-topic">
-                    <i class="bi bi-mic"></i>
-                    <span>Next-Gen Marketing Automation Strategies</span>
-                  </div>
-                  <p class="speaker-summary">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
-                  <div class="speaker-actions">
-                    <a href="#" class="profile-btn">Full Biography</a>
-                    <div class="speaker-social">
-                      <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                      <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="person-card">
+              <div class="person-meta">
+                <img src="assets/img/jury/manju-borah.webp" alt="Manju Borah">
+                <div>
+                  <h3 class="person-name">Manju Borah</h3>
+                  <span class="person-title">Writer • Director</span>
+                  <span class="badge-track">Jury</span>
                 </div>
               </div>
-            </div><!-- End Speaker Entry -->
-
+            </div>
           </div>
 
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Speakers Section -->
+    <!-- Advisors & Faces Section -->
+    <section id="advisors" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Advisors & Faces of the Festival</h2>
+        </div>
+        <div class="row grid-gap">
+
+          <!-- Advisors -->
+          <div class="col-lg-6">
+            <div class="soft-card h-100">
+              <h3 class="h5 mb-3"><i class="bi bi-people"></i> Festival Advisors</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><strong>Prakash Reddy</strong> — President, Hyderabad Film Club</li>
+                <li class="mb-2"><strong>Rupa Devi</strong> — Deputy Director, Directorate of Film Festivals, Govt. of India (New Delhi)</li>
+                <li class="mb-2"><strong>Heshvanth Gurukul</strong></li>
+                <li class="mb-2"><strong>Tanu Roy</strong></li>
+                <li class="mb-2"><strong>Vijayendra Prasad</strong> — Rajya Sabha MP • Writer & Director</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Faces of the Festival -->
+          <div class="col-lg-6">
+            <div class="soft-card h-100">
+              <h3 class="h5 mb-3"><i class="bi bi-star"></i> Core Team</h3>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><strong>Chief Festival Director:</strong> ‘Dil’ Raju (Chairman, Telangana Film Development Corporation)</li>
+                <li class="mb-2"><strong>Festival Directors:</strong> Madhu Mahankali • C. Nandan Babu • Vanaja</li>
+                <li class="mb-2"><strong>Festival Patron:</strong> Umamaheshwara Rao C.</li>
+                <li class="mb-2"><strong>Guest of Honour:</strong> Hon’ble Minister of Cinematography <em>Shri Komatireddy Venkatreddy</em> (Inaugural & Closing)</li>
+                <li class="mb-2"><strong>Brand Ambassador (TBD):</strong> One among Rana Daggubati, Nani, Vijay Deverakonda, Sai Pallavi</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Presenters, Comperes & Boards -->
+    <section id="stage-team" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>On-Stage Team & Committees</h2>
+        </div>
+        <div class="row grid-gap">
+          <div class="col-lg-4">
+            <div class="soft-card h-100">
+              <h3 class="h6 mb-3"><i class="bi bi-broadcast"></i> Presenters</h3>
+              <ul class="mb-0 list-unstyled">
+                <li>Gauree Dangui</li>
+                <li>Abhishikth Matta</li>
+                <li>Dheera Konduri</li>
+                <li>N. Mohan Vamsi</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="soft-card h-100">
+              <h3 class="h6 mb-3"><i class="bi bi-mic"></i> Compères</h3>
+              <ul class="mb-0 list-unstyled">
+                <li>Jhansi</li>
+                <li>Uday Bhanu</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="soft-card h-100">
+              <h3 class="h6 mb-3"><i class="bi bi-ui-checks"></i> Chairs – Preliminary Selection Boards</h3>
+              <ul class="mb-0 list-unstyled">
+                <li>Madhu Mahankali</li>
+                <li>Neelkanta</li>
+                <li>K. L. Prasad</li>
+                <li>V. N. Aditya</li>
+                <li>Sunita Tati</li>
+              </ul>
+              <hr>
+              <p class="mb-0"><i class="bi bi-people-fill"></i> <strong>Open Forum Co‑ordinator:</strong> Rohit Chandra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prizes & Mentions -->
+    <section id="prizes" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Prizes & Special Mentions</h2>
+        </div>
+        <div class="row grid-gap">
+          <div class="col-lg-7">
+            <div class="soft-card h-100">
+              <h3 class="h6">Main Awards</h3>
+              <ul class="list-check ps-0">
+                <li>1st Place: <strong>USD 1,000</strong> / ₹90,000</li>
+                <li>2nd Place: <strong>USD 750</strong> / ₹70,000</li>
+                <li>3rd Place: <strong>USD 500</strong> / ₹45,000</li>
+                <li class="mt-2">Plus: Miniature of <em>Hussain Sagar Buddha</em> & Citation Certificates of Merit</li>
+              </ul>
+              <h3 class="h6 mt-3">Jury Special Mentions</h3>
+              <ul class="list-check ps-0">
+                <li>Special Mention 1: <strong>USD 100</strong> / ₹10,000 + Citation</li>
+                <li>Special Mention 2: <strong>USD 100</strong> / ₹10,000 + Citation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="soft-card h-100">
+              <h3 class="h6">Programming Highlights</h3>
+              <ul class="mb-0 list-unstyled">
+                <li>Competitive Films</li>
+                <li>Non‑Competitive Films</li>
+                <li>North East Special Pavilion</li>
+                <li>Retrospective of Global Excellence</li>
+                <li class="mt-2">Food Festivals: Telangana • North East</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue & Tech -->
+    <section id="venue-tech" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Venue & Technical Support</h2>
+        </div>
+        <div class="row grid-gap">
+          <div class="col-lg-6">
+            <div class="soft-card h-100">
+              <h3 class="h6 mb-2"><i class="bi bi-geo-alt"></i> Location</h3>
+              <p class="mb-2"><strong>Prasad’s Multiplex</strong></p>
+              <ul class="list-unstyled mb-0">
+                <li>Two large auditoriums / screening halls (2 days)</li>
+                <li>Staging, lighting infrastructure and seating</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="soft-card h-100">
+              <h3 class="h6 mb-2"><i class="bi bi-sliders"></i> Technical Setup (Jury Screening)</h3>
+              <ul class="list-unstyled mb-0">
+                <li>Projectors & Screens</li>
+                <li>Sound system, microphones & mixing</li>
+                <li>Lighting setup</li>
+                <li>Skilled technicians & backup equipment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hospitality (optional block to keep) -->
+    <section id="hospitality" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Hospitality Overview</h2>
+        </div>
+        <div class="soft-card">
+          <ul class="mb-0 list-unstyled">
+            <li>3‑night hotel stay for invited filmmakers & jurors with local transport</li>
+            <li>Meals for guests & crew with tea/coffee breaks (2 days)</li>
+            <li>Local pickups & drops, and reimbursements for out‑of‑town guests</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <!-- Footer -->
   <footer id="footer" class="footer position-relative dark-background">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Evently</span>
+            <span class="sitename">HISFF 2025</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Prasad’s Multiplex</p>
+            <p>Hyderabad, Telangana</p>
+            <p class="mt-3"><strong>Email:</strong> <span>info@hisff.in</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Explore</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#prizes">Prizes</a></li>
+            <li><a href="#jury">Jury</a></li>
+            <li><a href="#advisors">Advisors</a></li>
+            <li><a href="#venue-tech">Venue</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Programme</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#prizes">Competitive & Non‑Competitive</a></li>
+            <li><a href="#prizes">North East Pavilion</a></li>
+            <li><a href="#prizes">Retrospectives</a></li>
+            <li><a href="#prizes">Food Festivals</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Contact</h4>
           <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
+            <li><a href="contact.html">Get in touch</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="buy-tickets.html">Buy Pass</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">HISFF 2025</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">Template adapted from <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -403,7 +438,5 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
