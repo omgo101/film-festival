@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Awards & Prizes - Hyderabad Short Film Festival</title>
+  <meta name="description"
+    content="Hyderabad Short Film Festival - Celebrating regional storytelling and global cinema">
+  <meta name="keywords" content="film festival, short films, Hyderabad, cinema, Telangana">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Evently
+  * Template URL: https://bootstrapmade.com/evently-bootstrap-events-template/
+  * Updated: Jul 19 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+  <style>
+    /* Additional CSS for Awards Page */
+    .awards-hero {
+      background-image: url('https://images.pexels.com/photos/2098604/pexels-photo-2098604.jpeg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0 80px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    
+    .page-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+    
+    .page-subtitle {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    
+    .prize-card {
+      background: var(--surface-color);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .prize-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .prize-card.featured {
+      border-left: 4px solid #ffd700;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .prize-card.featured::before {
+      content: "TOP PRIZE";
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: #ffd700;
+      color: #000;
+      padding: 5px 30px;
+      font-size: 12px;
+      font-weight: bold;
+      transform: rotate(45deg);
+    }
+    
+    .prize-rank {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+    
+    .prize-amount {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--heading-color);
+      margin-bottom: 10px;
+    }
+    
+    .prize-currency {
+      font-size: 1.2rem;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+    }
+    
+    .prize-description {
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      margin-bottom: 20px;
+    }
+    
+    .special-mention-card {
+      background: color-mix(in srgb, var(--accent-color), transparent 95%);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .awards-timeline {
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .awards-timeline::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--accent-color);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -36px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent-color);
+    }
+    
+    .judging-criteria {
+      background: var(--surface-color);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    .criteria-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    
+    .criteria-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .criteria-icon {
+      background: color-mix(in srgb, var(--accent-color), transparent 90%);
+      color: var(--accent-color);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    .criteria-content h4 {
+      margin-bottom: 5px;
+      font-size: 1.2rem;
+    }
+    
+    .criteria-content p {
+      margin: 0;
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">HSFF</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="speakers.html">Jury & team</a></li>
+          <li><a href="venue.html">Venue</a></li>
+           <li><a href="sponsors.html">Sponsors</a></li>
+          <li class="dropdown"><a href="#"><span>More Pages</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="speaker-details.html">Jury & Team Details</a></li>
+              <li><a href="tickets.html">Tickets</a></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="awards.html" class="active">Awards & Prizes</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="buy-tickets.html">Buy Tickets</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title Section -->
+    <section class="awards-hero section">
+
+          <h1 style="color: white;">Awards & Prizes</h1>
+
+    </section>
+
+    <!-- Main Prizes Section -->
+    <section id="main-prizes" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Main Competition Prizes</h2>
+          <p>Outstanding films will be recognized in our main competition categories</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1st Place -->
+          <div class="col-lg-4 col-md-6">
+            <div class="prize-card featured">
+              <div class="prize-rank">1st Place</div>
+              <div class="prize-amount">$1,100 <span class="prize-currency">/ ₹100,000</span></div>
+              <div class="prize-description">
+                <p>The top honor at HSFF 2025, awarded to the film that demonstrates exceptional storytelling, technical excellence, and creative vision.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Place -->
+          <div class="col-lg-4 col-md-6">
+            <div class="prize-card">
+              <div class="prize-rank">2nd Place</div>
+              <div class="prize-amount">$800 <span class="prize-currency">/ ₹75,000</span></div>
+              <div class="prize-description">
+                <p>Awarded to a film that demonstrates remarkable achievement in filmmaking and storytelling.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd Place -->
+          <div class="col-lg-4 col-md-6">
+            <div class="prize-card">
+              <div class="prize-rank">3rd Place</div>
+              <div class="prize-amount">$500 <span class="prize-currency">/ ₹50,000</span></div>
+              <div class="prize-description">
+                <p>Recognizing a film with outstanding creative elements and compelling narrative.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Awards Section -->
+    <section id="special-awards" class="section light-background">
+      <div class="container">
+        <div class="section-title">
+          <h2>Special Recognition Awards</h2>
+          <p>Additional awards celebrating specific achievements in filmmaking</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="special-mention-card">
+              <h4>Prize for Promising Endeavor</h4>
+              <div class="prize-amount">$200 <span class="prize-currency">/ ₹20,000</span></div>
+              <p>Awarded to a filmmaker showing exceptional promise and potential for future excellence.</p>
+              <span class="badge bg-primary">Special Mention</span>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="special-mention-card">
+              <h4>Prize for Promising Endeavor</h4>
+              <div class="prize-amount">$200 <span class="prize-currency">/ ₹20,000</span></div>
+              <p>Recognizing another outstanding emerging talent in the film industry.</p>
+              <span class="badge bg-primary">Special Mention</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <div class="special-mention-card">
+              <h4>Jury Special Mention Prize</h4>
+              <div class="prize-amount">$100 <span class="prize-currency">/ ₹10,000</span></div>
+              <p>Awarded by the jury to a film that demonstrates unique artistic vision or technical innovation.</p>
+              <span class="badge bg-primary">Special Mention</span>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="special-mention-card">
+              <h4>Jury Special Mention Prize</h4>
+              <div class="prize-amount">$100 <span class="prize-currency">/ ₹10,000</span></div>
+              <p>Recognizing exceptional work in a specific aspect of filmmaking as selected by the jury.</p>
+              <span class="badge bg-primary">Special Mention</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="special-mention-card text-center">
+              <h4>All Special Mention Awardees Receive</h4>
+              <p>Citation of Special Mention and Certificates of Merit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Judging Criteria Section -->
+    <section id="judging-criteria" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Judging Criteria</h2>
+          <p>Our esteemed jury evaluates films based on the following criteria</p>
+        </div>
+
+        <div class="judging-criteria">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="criteria-item">
+                <div class="criteria-icon">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <div class="criteria-content">
+                  <h4>Originality & Creativity</h4>
+                  <p>Innovative storytelling, unique perspective, and creative approach to the subject matter.</p>
+                </div>
+              </div>
+              
+              <div class="criteria-item">
+                <div class="criteria-icon">
+                  <i class="bi bi-camera-reels"></i>
+                </div>
+                <div class="criteria-content">
+                  <h4>Technical Merit</h4>
+                  <p>Adaptability of techniques to strengthen the narratives.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="criteria-item">
+                <div class="criteria-icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <div class="criteria-content">
+                  <h4>Art of Storytelling</h4>
+                  <p>Engaging narratives that captivate audiences.</p>
+                </div>
+              </div>
+              
+              <div class="criteria-item">
+                <div class="criteria-icon">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <div class="criteria-content">
+                  <h4>Emotional Impact</h4>
+                  <p>Resonance with viewers' feelings and experiences.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Timeline Section -->
+    <section id="awards-timeline" class="section light-background">
+      <div class="container">
+        <div class="section-title">
+          <h2>Awards Timeline</h2>
+          <p>Important dates for the awards process</p>
+        </div>
+
+        <div class="awards-timeline">
+          <div class="timeline-item">
+            <h4>Submission Deadline</h4>
+            <p class="text-muted">December 05, 2025</p>
+            <p>Last date to submit films for consideration in the competition.</p>
+          </div>
+          
+          <div class="timeline-item">
+            <h4>Jury Review Period</h4>
+            <p class="text-muted">December 19 - December 20, 2025</p>
+            <p>Our esteemed jury panel reviews all eligible submissions.</p>
+          </div>
+          
+          <div class="timeline-item">
+            <h4>Awards Ceremony</h4>
+            <p class="text-muted">December 21, 2025</p>
+            <p>Winners will be announced at the grand awards ceremony during the festival.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-4 mb-4">Ready to Showcase Your Film?</h2>
+            <p class="lead mb-5">Submit your short film for a chance to win these prestigious awards and gain recognition in the film industry.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="cta-content">
+              <div class="cta-buttons">
+                <a href="#" class="btn btn-primary btn-lg me-3">Submit Your Film</a>
+                <a href="schedule.html" class="btn btn-outline-secondary btn-lg">View Festival Schedule</a>
+              </div>
+              <div class="security-note mt-4">
+                <small>
+                  <i class="bi bi-shield-check me-2"></i>
+                  Submission guidelines apply • All genres welcome
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">HSFF</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Prasads Multiplex</p>
+            <p>Hyderabad, Telangana 500081</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 555 123 4567</span></p>
+            <p><strong>Email:</strong> <span>info@hyderabadfilmfest.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="#">Submit Film</a></li>
+            <li><a href="speakers.html">Jury & Festival Team</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Other Quick Links</h4>
+          <ul>
+            <li><a href="venue.html">Venue</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tickets.html">Festival Tickets</a></li>
+            <li><a href="awards.html">Awards & Prizes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <ul>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="404.html">404</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Partners</h4>
+          <ul>
+            <li><a href="https://dpsfs.edu.in/">Dadasaheb Phalke School</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Hyderabad Short Film Festival</strong> <span>All Rights
+          Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
