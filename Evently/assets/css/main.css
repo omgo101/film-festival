@@ -911,7 +911,7 @@ section,
 
 @media (max-width: 768px) {
   .hero .countdown {
-    gap: 20px;
+    gap: 2px;
   }
 }
 
