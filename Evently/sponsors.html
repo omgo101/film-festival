@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sponsors - Evently Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Sponsors - Hyderabad International Short Film Festival</title>
+  <meta name="description" content="HISFF 2025 sponsors and partners">
+  <meta name="keywords" content="HISFF, sponsors, partners, Hyderabad, film festival">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Kanit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,24 +28,85 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Evently
-  * Template URL: https://bootstrapmade.com/evently-bootstrap-events-template/
-  * Updated: Jul 19 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* Simple, clean sponsor styles */
+    .sponsor-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .35rem .75rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: .9rem;
+      background: var(--accent-color, #e63946);
+      color: #fff;
+    }
+
+    .sponsor-card {
+      background: var(--surface-color, #ffffff);
+      border-radius: 16px;
+      padding: 28px;
+      height: 100%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .06);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .sponsor-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .10);
+    }
+
+    .sponsor-logo {
+      max-height: 90px;
+      width: auto;
+      object-fit: contain;
+      filter: none;
+    }
+
+    .sponsor-link {
+      text-decoration: none;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+      padding: 10px;
+      background: rgba(0, 0, 0, .02);
+      border-radius: 12px;
+    }
+
+    .muted {
+      opacity: .85;
+    }
+
+    .grid-gap {
+      row-gap: 24px;
+    }
+
+    /* Optional: a simple divider title */
+    .section-title {
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+  </style>
 </head>
 
 <body class="sponsors-page">
 
-   <header id="header" class="header d-flex align-items-center fixed-top">
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-       <img src="assets/img/logon.png" alt="HISFF Logo" class="logo">
+        <img src="assets/img/logon.png" alt="HISFF Logo" class="logo">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -57,11 +120,10 @@
           <li class="dropdown"><a href="#"><span>More Pages</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              
               <li><a href="awards.html">Awards & Prizes</a></li>
               <li><a href="speaker-details.html">Jury & Team Details</a></li>
               <li><a href="tickets.html">Tickets</a></li>
-       <li><a href="privacy.html">Terms & Privacy</a></li>
+              <li><a href="terms-privacy.html">Terms & Privacy</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="404.html">404</a></li>
             </ul>
@@ -75,6 +137,8 @@
 
     </div>
   </header>
+  <!-- /Header -->
+
   <main class="main">
 
     <!-- Page Title -->
@@ -88,12 +152,83 @@
           </ol>
         </nav>
       </div>
-    </div><!-- End Page Title -->
- <h1>Sponsors will be announcing soon</h1>
-   
+    </div>
+    <!-- End Page Title -->
+
+    <!-- Title Sponsors -->
+    <section class="section">
+      <div class="container">
+
+        <div class="text-center mb-2">
+          <span class="sponsor-badge"><i class="bi bi-star-fill me-1"></i> Title Sponsors</span>
+        </div>
+        <h2 class="section-title text-center">Our Title Sponsors</h2>
+        <p class="section-subtitle text-center muted">
+          We proudly partner with Telangana’s key public institutions supporting film and tourism.
+        </p>
+
+        <div class="row grid-gap">
+          <div class="col-12 col-md-6">
+            <a class="sponsor-link" href="https://www.tgfilm.telangana.gov.in/" target="_blank" rel="noopener">
+              <div class="sponsor-card h-100 text-center p-4">
+                <img src="/Evently/assets/img/tgfdc.jpeg" alt="Telangana Film Development Corporation (TGFDC) Logo"
+                  class="img-fluid" style="max-height: 250px; width: auto; object-fit: contain;">
+                <h3 class="h5 mt-3">Telangana Film Development Corporation (TGFDC)</h3>
+                <p class="text-muted mb-0">Official state body supporting film production, policy, and growth in
+                  Telangana.</p>
+              </div>
+            </a>
+          </div>
+          <!-- Sponsor 2: TSTDC -->
+        <!-- Sponsor 2: TSTDC -->
+<div class="col-12 col-md-6">
+  <a class="sponsor-link" href="https://tourism.telangana.gov.in/" target="_blank" rel="noopener">
+    <div class="sponsor-card h-100 text-center p-4">
+      <img
+        src="/Evently/assets/img/tgtdc.jpg"
+        alt="Telangana State Tourism Development Corporation (TSTDC) Logo"
+        class="img-fluid"
+        style="max-height: 250px; width: auto; object-fit: contain;">
+      <h3 class="h5 mt-3">Telangana State Tourism Development Corporation (TSTDC)</h3>
+      <p class="text-muted mb-0">Tourism development and promotion across Telangana, enabling culture and events.</p>
+    </div>
+  </a>
+</div>
+
+
+      </div>
+    </section>
+
+    <!-- Optional: More Sponsors / Partners (you can add later) -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="text-center mb-2">
+          <span class="sponsor-badge" style="background: #6c757d;"><i class="bi bi-people-fill me-1"></i>
+            Partners</span>
+        </div>
+        <h2 class="section-title text-center">Partners</h2>
+        <p class="section-subtitle text-center muted">More partners will be announced soon.</p>
+
+        <!-- Example empty grid for future partners -->
+        <div class="row grid-gap">
+          <!-- Copy this block for each new partner and update image + text
+          <div class="col-6 col-md-3">
+            <div class="sponsor-card h-100">
+              <div class="logo-wrap mb-2">
+                <img src="assets/img/sponsors/sample.png" alt="Partner Name" class="sponsor-logo">
+              </div>
+              <h3 class="h6 mb-1">Partner Name</h3>
+              <p class="small muted mb-0">Short tagline here</p>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <!-- Footer -->
   <footer id="footer" class="footer position-relative dark-background">
 
     <div class="container footer-top">
@@ -102,7 +237,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">HISFF</span>
           </a>
-        <div class="footer-contact pt-3">
+          <div class="footer-contact pt-3">
             <p>8-2-334/45/46, Green Valley, Banjara Hills,</p>
             <p>Hyderabad, Telangana 500034</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+91 9000021160</span></p>
@@ -112,7 +247,7 @@
             <a href="https://x.com/hisff25"><i class="bi bi-twitter-x"></i></a>
             <a href="https://www.facebook.com/share/1Gf6NqXosM/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/hisff25?igsh=bW54NjlvbnNjeWZ1"><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -123,7 +258,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="schedule.html">Schedule</a></li>
             <li><a href="#">Submit Film</a></li>
-            <li><a href="#">Jury & Festival Team</a></li>
+            <li><a href="speakers.html">Jury & Festival Team</a></li>
           </ul>
         </div>
 
@@ -134,14 +269,14 @@
             <li><a href="sponsors.html">Sponsors</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="tickets.html">Festival Tickets</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="awards.html">Awards & Prizes</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <ul>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
+            <li><a href="terms-privacy.html">Terms & Privacy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="404.html">404</a></li>
           </ul>
         </div>
@@ -158,15 +293,18 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Hyderabad International Short Film Festival</strong> <span>All Rights
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Hyderabad International Short Film Festival</strong>
+        <span>All Rights
           Reserved</span></p>
-     
     </div>
 
   </footer>
+  <!-- /Footer -->
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
