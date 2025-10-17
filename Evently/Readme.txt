@@ -161,7 +161,7 @@ License: https://bootstrapmade.com/license/
       <div class="col-lg-2 col-md-6 footer-links">
         <h4>Resources</h4>
         <ul class="list-unstyled mb-0">
-          <li><a href="terms-privacy.html">Terms & Privacy</a></li>
+          <li><a href="privacy.html">Terms & Privacy</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="404.html">404</a></li>
         </ul>
@@ -836,7 +836,7 @@ License: https://bootstrapmade.com/license/
       <div class="col-lg-2 col-md-6 footer-links">
         <h4>Resources</h4>
         <ul class="list-unstyled mb-0">
-          <li><a href="terms-privacy.html">Terms & Privacy</a></li>
+          <li><a href="privacy.html">Terms & Privacy</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="404.html">404</a></li>
         </ul>
