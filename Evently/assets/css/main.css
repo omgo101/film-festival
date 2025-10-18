@@ -18,40 +18,40 @@
   --heading-font: "Rubik",  sans-serif;
   --nav-font: "Kanit",  sans-serif;
 }
-
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors - Updated for Deep Red / Cream / Gold Theme */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #40372e; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #281a0c; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #f87500; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #A91D1D; /* Deep red background for the entire website */
+  --default-color: #F5E6D3; /* Cream/off-white for main text */
+  --heading-color: #FAF0E6; /* Slightly lighter cream for headings */
+  --accent-color: #E8963D; /* Gold/orange accent for buttons, links, highlights */
+  --surface-color: #B71C1C; /* Slightly darker red for cards or inner sections */
+  --contrast-color: #FFFFFF; /* Pure white for high contrast text when needed */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors - Adjusted to match the same red and gold tone */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #f87500; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #40372e; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #f87500; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #FAF0E6;  /* Cream color for normal nav links */
+  --nav-hover-color: #E8963D; /* Gold for hover and active nav links */
+  --nav-mobile-background-color: #A91D1D; /* Deep red for mobile nav background */
+  --nav-dropdown-background-color: #B71C1C; /* Slightly darker red for dropdown menus */
+  --nav-dropdown-color: #F5E6D3; /* Cream for dropdown text */
+  --nav-dropdown-hover-color: #E8963D; /* Gold hover effect for dropdown links */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
+/* Color Presets - Optional section backgrounds */
 .light-background {
-  --background-color: #fffbf7;
-  --surface-color: #ffffff;
+  --background-color: #F5E6D3; /* Cream section background */
+  --surface-color: #FAF0E6; /* Lighter cream for inner boxes */
+  --default-color: #A91D1D; /* Deep red for text */
+  --heading-color: #B71C1C; /* Darker red for headings */
 }
 
 .dark-background {
-  --background-color: #100901;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
+  --background-color: #4A0E0E; /* Very dark maroon background */
+  --default-color: #F5E6D3; /* Cream for text */
+  --heading-color: #FAF0E6; /* Light cream for headings */
+  --surface-color: #A91D1D; /* Red surface panels */
+  --contrast-color: #FFFFFF; /* White contrast text */
 }
 
 /* Smooth scroll */
