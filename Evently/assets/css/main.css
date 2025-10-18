@@ -42,8 +42,8 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #fffbf7;
-  --surface-color: #ffffff;
+  --background-color:#ffe135;
+  --surface-color:#ffe135;
 }
 
 .dark-background {
@@ -1110,7 +1110,7 @@ section,
 --------------------------------------------------------------*/
 .intro {
   position: relative;
-  background: transparent !important;
+  background: #ffe135;
   overflow: hidden;
 }
 
