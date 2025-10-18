@@ -22,9 +22,9 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #000000; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
-  --accent-color:  #A91D1D; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #40372e; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #281a0c; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #f87500; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -32,11 +32,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color:  #A91D1D; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #f87500; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #000000; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color:  #A91D1D; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #40372e; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #f87500; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -47,10 +47,10 @@
 }
 
 .dark-background {
-  --background-color: #000000;
+  --background-color: #100901;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #000000;
+  --surface-color: #252525;
   --contrast-color: #ffffff;
 }
 
@@ -214,7 +214,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(0, 0, 0, 0.9);
+  --background-color: rgba(34, 18, 2, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -784,7 +784,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-    background: transparent !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--background-color), transparent 30%) 0%, color-mix(in srgb, var(--background-color), transparent 50%) 100%);
   z-index: 1;
 }
 
@@ -1110,7 +1110,7 @@ section,
 --------------------------------------------------------------*/
 .intro {
   position: relative;
-  background: transparent !important;
+  background: linear-gradient(135deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 90%) 100%);
   overflow: hidden;
 }
 
@@ -1121,7 +1121,7 @@ section,
   right: -20%;
   width: 40%;
   height: 200%;
-    background: transparent !important;
+  background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, transparent 70%);
   transform: rotate(-15deg);
   z-index: 1;
 }
@@ -1198,7 +1198,7 @@ section,
   transform: translateX(-50%);
   width: 30px;
   height: 3px;
-  background: transparent !important;
+  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 70%));
   border-radius: 2px;
 }
 
@@ -1274,14 +1274,14 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: transparent !important;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 60%) 0%, transparent 100%);
 }
 
 .intro .image-wrapper .floating-badge {
   position: absolute;
   top: 20px;
   right: 20px;
-background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000000 20%));
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000000 20%));
   color: var(--contrast-color);
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
@@ -1328,7 +1328,7 @@ background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(
   font-size: 2.5rem;
   color: var(--accent-color);
   margin-bottom: 1rem;
- background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000000 30%));
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000000 30%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1350,7 +1350,7 @@ background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(
 .intro .founder-quote {
   margin-top: 4rem;
   padding: 3rem 2rem;
-    background: transparent !important;
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--accent-color), transparent 97%) 100%);
   border-radius: 25px;
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   position: relative;
@@ -1625,7 +1625,7 @@ background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(
   left: 0;
   right: 0;
   bottom: 0;
-   background: transparent !important;
+  background: linear-gradient(180deg, transparent 60%, color-mix(in srgb, var(--default-color), transparent 30%) 100%);
   opacity: 0;
   transition: all 0.3s ease;
   display: flex;
@@ -1873,7 +1873,7 @@ background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(
 }
 
 .schedule .track-headers .track-header.development {
-  background: transparent !important;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
 }
 
 .schedule .track-headers .track-header.design {
@@ -5493,3 +5493,6 @@ background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+.starter-section {
+  /* Add your styles here */
+}
