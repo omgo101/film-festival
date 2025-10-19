@@ -36,6 +36,44 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+.faq-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.faq-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.faq-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #e8f4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004793;
+  flex-shrink: 0;
+}
+
+.faq-link {
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover .faq-link {
+  transform: translateX(5px);
+}
+
+.card-title {
+  color: #004793;
+  font-weight: 600;
+  line-height: 1.4;
+}
+</style>
 </head>
 
 <body class="index-page">
@@ -236,7 +274,189 @@
 
     </section><!-- /Intro Section -->
 
-   
+       <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="section-title text-center mb-5">
+          <h2 style="color: #004793;">Frequently Asked Questions</h2>
+          <p class="lead">Find answers to the most common questions about our festival</p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Question 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='awards.html#awards-timeline'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-film fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">What is the film submission process?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Learn about eligibility criteria, submission guidelines, and deadlines for film entries.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='tickets.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-ticket-perforated fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">How can I purchase festival tickets?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Find details about ticket types, pricing, and how to purchase passes for the festival.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='schedule.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-calendar-event fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">Where can I find the festival schedule?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">View the complete schedule of screenings, panel discussions, and special events.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='awards.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-trophy fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">What awards and categories are available?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Discover the award categories, judging criteria, and prize details for winning films.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='venue.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-geo-alt fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">Where is the festival venue located?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Get information about the festival venue, directions, and recommended accommodations.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='contact.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-question-circle fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">How can I contact the festival organizers?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Find contact information and support channels for any additional questions or assistance.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='speakers.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-people fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">Who are the festival guests and speakers?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Meet our distinguished guests, industry experts, and special speakers for this year's festival.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 8 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='sponsors.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-building fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">Who are the festival sponsors?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Discover the organizations and companies supporting our festival and their contributions.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 9 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="faq-card card h-100 border-0 shadow-sm" onclick="location.href='tickets.html'">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="faq-icon me-3">
+                    <i class="bi bi-arrow-clockwise fs-4"></i>
+                  </div>
+                  <h4 class="card-title mb-0 fs-5">What is the ticket cancellation policy?</h4>
+                </div>
+                <p class="card-text text-muted flex-grow-1">Learn about our refund policy, cancellation procedures, and transfer options for tickets.</p>
+                <div class="faq-link mt-2">
+                  <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="faq.html" class="btn btn-outline-primary">View All FAQs</a>
+        </div>
+
+      </div>
+
+    </section><!-- /FAQ Section -->
     
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
