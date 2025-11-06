@@ -2,61 +2,216 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Festival Advisor & Festival Team – Hyderabad International Short Film Festival 2025</title>
-  <meta name="description" content="Official festival advisor, advisors, festival directors, presenters and prize details for Hyderabad International Short Film Festival 2025.">
-  <meta name="keywords" content="Hyderabad International Short Film Festival 2025, Festival Advisor, Advisors, Festival Team, Prizes, Venue, Program">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festival people & Team – HISFF 2025</title>
 
-  <!-- Favicons -->
-  <link href="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/logov2.png?raw=true" rel="icon">
-  <link href="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/logov2.png?raw=true" rel="apple-touch-icon">
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700;900&family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS Files (your site setup) -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template: Evently – adapted for Hyderabad International Short Film Festival 2025
-  * Updated: Oct 06, 2025
-  * Author: You + ChatGPT
-  ======================================================== -->
-  <style>
-    .section-title h2 { font-weight: 800; letter-spacing: .5px; }
-    .person-card { background: var(--surface-color, #111); border-radius: 16px; padding: 18px; height: 100%; box-shadow: 0 6px 24px rgba(0,0,0,.15); }
-    .person-meta { display: flex; gap: 16px; align-items: center; }
-    .person-meta img { width: 88px; height: 88px; object-fit: cover; border-radius: 12px; }
-    .person-name { margin: 0; font-weight: 800; font-size: 1.15rem; }
-    .person-title { display: block; opacity: .85; font-size: .95rem; }
-    .badge-track { display: inline-block; margin-top: 8px; padding: 4px 10px; border-radius: 999px; font-size: .75rem; background: rgba(255,255,255,.08); }
-    .grid-gap { row-gap: 22px; }
-    .list-check li { margin-bottom: 10px; }
-    .dark-background .page-overlay { backdrop-filter: blur(1px); background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.6)); border-radius: 18px; padding: 10px 16px; display: inline-block; }
-    .soft-card { border-radius: 16px; background: rgba(255,255,255,.04); padding: 18px; }
-  </style>
+ <style>
+  /* ======== BASE ======== */
+  body.index-page {
+    background: #f5f6f9;
+    color: #222;
+    font-family: "Rubik", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  /* ======== SECTION TITLES ======== */
+  .section-title {
+    text-align: center;
+    margin-bottom: 2.2rem;
+  }
+
+  .section-title h2 {
+    font-weight: 800;
+    color: #003a70;
+    margin-bottom: 0.5rem;
+  }
+
+  .underline {
+    width: 72px;
+    height: 4px;
+    background: #0053a5;
+    margin: 0.25rem auto 0;
+    border-radius: 3px;
+  }
+
+  .section-title p {
+    color: #6c757d;
+  }
+
+  /* ======== TEAM CARD ======== */
+  .team-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+  }
+
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+  }
+
+  /* ======== IMAGE FIX (FLEXIBLE CONTAINER) ======== */
+  .team-card .image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Creates a consistent 4:3 aspect ratio */
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .team-card img,
+  .team-card .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%; /* Shows more of the face/head */
+    transition: transform 0.4s ease;
+  }
+
+  .team-card:hover img {
+    transform: scale(1.03);
+  }
+
+  /* ======== BLUE CIRCLE ICON ======== */
+.team-card .icon-circle {
+  width: 54px;
+  height: 54px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;                    /* centers horizontally */
+  bottom: -27px;                /* overlaps between image and text */
+  transform: translateX(-50%);  /* keeps it perfectly centered */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+
+  .team-card .icon-circle svg {
+    width: 26px;
+    height: 26px;
+    fill: none;
+    stroke: #1a73e8;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ======== CARD TEXT ======== */
+  .team-card .card-body {
+    padding: 2.5rem 1.4rem 1.4rem;
+    text-align: left;
+  }
+
+  .team-card .name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #003a70;
+    margin: 0 0 0.3rem;
+  }
+
+  .team-card .role {
+    color: #0053a5;
+    font-size: 0.94rem;
+    margin: 0 0 0.25rem;
+    font-weight: 500;
+  }
+
+  .team-card .org {
+    color: #555;
+    font-size: 0.86rem;
+    margin: 0;
+  }
+
+  .team-card .bio {
+    color: #5c5c5c;
+    font-size: 0.92rem;
+    margin-top: 0.8rem;
+  }
+
+  /* ======== ADVISORY SECTION (SOFT CARD) ======== */
+  .advisory-card {
+    background: #f4f6fb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid #0053a5;
+    height: 100%;
+  }
+
+  .advisory-card h3 {
+    color: #003a70;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .advisory-card ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .advisory-card li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  /* ======== SOFT CARD FOR SOCIETY NOTE ======== */
+  .soft-card {
+    background: #f4f6fb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid #0053a5;
+  }
+
+  /* ======== RESPONSIVE FIXES ======== */
+  @media (max-width: 768px) {
+    .team-card .icon-circle {
+      top: calc(75% - 24px);
+      left: 18px;
+      width: 48px;
+      height: 48px;
+    }
+
+    .team-card .icon-circle svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .advisory-card {
+      padding: 1.25rem;
+    }
+  }
+</style>
+
+
 </head>
 
-<body class="speakers-page">
+<body class="index-page">
 
-  <!-- Header -->
+  <!-- ===== Header (your site's header kept) ===== -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-   <img src="assets/img/logon.png" alt="HISFF Logo" class="logo">
+        <img src="assets/img/logon.png" alt="HISFF Logo" class="logo">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -64,19 +219,17 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="speakers.html"class="active">Festival Advisor & team</a></li>
+          <li><a href="speakers.html" class="active">Festival people & Team</a></li>
           <li><a href="venue.html">Venue</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              
               <li><a href="awards.html">Awards & Prizes</a></li>
-              <li><a href="speaker-details.html">Festival Advisor & Team Details</a></li>
+              <li><a href="speaker-details.html">Festival people & Team Details</a></li>
               <li><a href="tickets.html">Tickets</a></li>
-             <li><a href="privacy.html">Terms & Privacy</a></li>
+              <li><a href="privacy.html">Terms & Privacy</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="404.html">404</a></li>
+              <li><a href="rules.html">Rules & Terms</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contact</a></li>
@@ -85,111 +238,58 @@
       </nav>
 
       <a class="btn-getstarted" href="tickets.html">Buy Tickets</a>
-
     </div>
   </header>
-  <main class="main">
+
+  <!-- ===== Main ===== -->
+  <main class="main" style="margin-top: 96px;">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(assets/img/events/showcase-9.webp);">
-      <div class="container position-relative">
-        <div class="page-overlay mb-2"><small>Hyderabad International Short Film Festival <strong>2025</strong></small></div>
-        <h1>Festival Advisor & Festival Team</h1>
-        <p>Meet the festival advisor, advisors and the core team behind the festival. Explore prizes, program highlights and venue details.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Festival Advisor & Team</li>
-          </ol>
-        </nav>
+    <section class="py-4 bg-white">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="fw-bold mb-1">Festival Dignitaries & Team</h1>
+          <p class="text-muted mb-0">Hyderabad International Short Film Festival 2025</p>
+        </div>
       </div>
-    </div>
-    <!-- End Page Title -->
+    </section>
 
-    <!-- Festival Advisor Section -->
-    <section id="festival advisor" class="section">
+    <!-- ===== Festival Collaborators ===== -->
+    <section class="py-5">
       <div class="container">
         <div class="section-title">
-          <h2>Festival Festival Advisor</h2>
-          <p>The festival advisor brings decades of cinematic craft across writing, direction and performance.</p>
+          <h2>Festival Collaborators</h2>
+          <div class="underline"></div>
         </div>
-        <div class="row grid-gap">
 
-          <!-- Festival Advisor cards: photos are placeholders; replace with real images in assets/img/festival advisor/*.webp -->
-          <div class="col-md-6 col-lg-4">
-            <div class="person-card">
-              <div class="person-meta">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nagesh_Kukunoor.jpg/800px-Nagesh_Kukunoor.jpg" alt="Nagesh Kukunoor">
-                <div>
-                  <h3 class="person-name">Nagesh Kukunoor</h3>
-                  <span class="person-title">Writer • Director</span>
-                  <span class="badge-track">Festival Advisor</span>
-                </div>
+        <div class="row g-4">
+
+          <!-- Dil Raju -->
+          <div class="col-md-6 col-lg-6">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://mangomassmedia.com/wp-content/uploads/2021/10/Dil%20Raju.jpg" alt="Dil Raju">
+              </div>
+    
+              <div class="card-body">
+                <h3 class="name">Shri DIL RAJU</h3>
+                <p class="role">Producer • Chairman, Telangana Film Development Corporation (TFDC)</p>
+                <p class="bio">Award-winning Indian film producer & distributor (Sri Venkateswara Creations). Two National Awards (Best Popular Film) for <em>Sathamanam Bhavati</em> (2016) & <em>Maharshi</em> (2019); Nagi Reddy–Chakrapani Award (2013). Producer of <em>Arya</em>, <em>Bommarillu</em>, <em>Fidaa</em>, <em>Balagam</em>. Serving as TFDC Chairman since late-2024.</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="person-card">
-              <div class="person-meta">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nag_Ashwin_by_Gage_Skidmore.jpg/250px-Nag_Ashwin_by_Gage_Skidmore.jpg" alt="Naga Ashwin">
-                <div>
-                  <h3 class="person-name">Naga Ashwin</h3>
-                  <span class="person-title">Writer • Director</span>
-                  <span class="badge-track">Festival Advisor</span>
-                </div>
+          <!-- Priyanka IAS -->
+          <div class="col-md-6 col-lg-6">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Priyanka, IAS">
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="person-card">
-              <div class="person-meta">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Nassar_at_Oru_Kadhai_Sollattumaa_Audio_Launch_%28cropped%29.jpg" alt="Nasser">
-                <div>
-                  <h3 class="person-name">Nasser</h3>
-                  <span class="person-title">Actor • Director • President, Nadigar Sangam</span>
-                  <span class="badge-track">Festival Advisor</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="person-card">
-              <div class="person-meta">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Tarun_Bhascar_in_Cinivaram.jpg/250px-Tarun_Bhascar_in_Cinivaram.jpg" alt="Tharun Bhaskar">
-                <div>
-                  <h3 class="person-name">Tharun Bhaskar</h3>
-                  <span class="person-title">Writer • Director</span>
-                  <span class="badge-track">Festival Advisor</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="person-card">
-              <div class="person-meta">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Revathi_at_the_screening_of_Masaala_at_PVR_Phoenix_%281%29_%28cropped%29.jpg" alt="Revathi">
-                <div>
-                  <h3 class="person-name">Revathi</h3>
-                  <span class="person-title">Actor • Writer • Director</span>
-                  <span class="badge-track">Festival Advisor</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="person-card">
-              <div class="person-meta">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ms_Manju_Bora%2C_Director_joymoti_%28Assamese%29_addressing_a_press_conference_at_Black_Box%2C_Kala_Academy_during_the_37th_International_Film_Festival_%28IFFI-2006%29_in_Panaji%2C_Goa_on_November_25%2C_2006.jpg/250px-thumbnail.jpg" alt="Manju Borah">
-                <div>
-                  <h3 class="person-name">Manju Borah</h3>
-                  <span class="person-title">Writer • Director</span>
-                  <span class="badge-track">Festival Advisor</span>
-                </div>
+  
+              <div class="card-body">
+                <h3 class="name">Smt. Priyanka, IAS</h3>
+                <p class="role">Managing Director, Telangana Film Development Corporation Limited (TGFDC)</p>
+                <p class="bio">Civil servant and arts advocate strengthening Telangana's creative industries — building infrastructure, incentives, and pathways for film, TV & theatre; positioning Telangana as a hub for cultural and cinematic growth.</p>
               </div>
             </div>
           </div>
@@ -198,113 +298,281 @@
       </div>
     </section>
 
-    <!-- Advisors & Faces Section -->
-    <section id="advisors" class="section">
+    <!-- ===== Festival Promoters ===== -->
+    <section class="py-5">
       <div class="container">
         <div class="section-title">
-          <h2>Advisors & Faces of the Festival</h2>
+          <h2>Festival Promoters</h2>
+          <div class="underline"></div>
         </div>
-        <div class="row grid-gap">
 
-          <!-- Advisors -->
-          <div class="col-lg-6">
-            <div class="soft-card h-100">
-              <h3 class="h5 mb-3"><i class="bi bi-people"></i> Festival Advisors</h3>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><strong>Prakash Reddy</strong> — President, Hyderabad Film Club</li>
-                <li class="mb-2"><strong>Rupa Devi</strong> — Deputy Director, Directorate of Film Festivals, Govt. of India (New Delhi)</li>
-                <li class="mb-2"><strong>Heshvanth Gurukul</strong></li>
-                <li class="mb-2"><strong>Tanu Roy</strong></li>
-                <li class="mb-2"><strong>Vijayendra Prasad</strong> — Rajya Sabha MP • Writer & Director</li>
-              </ul>
+        <div class="row g-4">
+          <!-- Jayesh Ranjan -->
+          <div class="col-md-6 col-lg-6">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://scontent.fbom57-1.fna.fbcdn.net/v/t1.6435-9/52793056_10156168370795677_7825891808763707392_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zb3bTrmqltQQ7kNvwGykOmW&_nc_oc=AdlMHSMOrsugM1R7xIMiqFRbwPPNZpFct6D9LpaSTmE02MtqJGxTKJpqU9q1tvrEdwI&_nc_zt=23&_nc_ht=scontent.fbom57-1.fna&_nc_gid=CMmSSYCmeN5uqpxsJdkThw&oh=00_Afgp5koqk4ClRXRn-hpMJGk-27MMHLAwrMsdnB5nf3admA&oe=69338F00" alt="Jayesh Ranjan">
+              </div>
+
+              <div class="card-body">
+                <h3 class="name">Shri JAYESH RANJAN</h3>
+                <p class="role">Special Chief Secretary (FAC) – Youth Advancement</p>
+                <p class="org">Tourism & Culture Department, Government of Telangana</p>
+                <p class="bio">Senior IAS officer leading Youth Advancement, Tourism & Culture. Drives initiatives across entrepreneurship, tourism, digital innovation and youth empowerment; shaping Telangana's forward-looking global image.</p>
+              </div>
             </div>
           </div>
 
-          <!-- Faces of the Festival -->
-          <div class="col-lg-6">
-            <div class="soft-card h-100">
-              <h3 class="h5 mb-3"><i class="bi bi-star"></i> Core Team</h3>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><strong>Chief Festival Director:</strong> ‘Dil’ Raju (Chairman, Telangana Film Development Corporation)</li>
-                <li class="mb-2"><strong>Festival Directors:</strong> Madhu Mahankali • C. Nandan Babu • Vanaja</li>
-                <li class="mb-2"><strong>Festival Patron:</strong> Umamaheshwara Rao C.</li>
-                <li class="mb-2"><strong>Guest of Honour:</strong> Hon’ble Minister of Cinematography <em>Shri Komatireddy Venkatreddy</em> (Inaugural & Closing)</li>
-                <li class="mb-2"><strong>Brand Ambassador (TBD):</strong> One among Rana Daggubati, Nani, Vijay Deverakonda, Sai Pallavi</li>
-              </ul>
+          <!-- Valluru Kranthi -->
+          <div class="col-md-6 col-lg-6">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://pynr.in/wp-content/uploads/2025/07/PHOTO-2025-07-08-22-17-40-edited.jpg" alt="Valluru Kranthi">
+              </div>
+          
+              <div class="card-body">
+                <h3 class="name">Smt. VALLURU KRANTHI, IAS</h3>
+                <p class="role">Managing Director – Telangana Tourism Development Corporation Limited</p>
+                <p class="role">Director (FAC) – Department of Tourism, Government of Telangana</p>
+                <p class="bio">Administrator championing heritage, infrastructure, and experiential tourism. Leads sustainable, community-centric projects expanding Telangana's cultural tourism footprint.</p>
+              </div>
             </div>
           </div>
-
         </div>
+
       </div>
     </section>
 
-    <!-- Presenters, Comperes & Boards -->
-    <section id="stage-team" class="section">
+    <!-- ===== Festival Patron & Advisors ===== -->
+    <section class="py-5">
       <div class="container">
         <div class="section-title">
-          <h2>On-Stage Team & Committees</h2>
+          <h2>Festival Patron & Advisors</h2>
+          <div class="underline"></div>
         </div>
-        <div class="row grid-gap">
-          <div class="col-lg-4">
-            <div class="soft-card h-100">
-              <h3 class="h6 mb-3"><i class="bi bi-broadcast"></i> Presenters</h3>
-              <ul class="mb-0 list-unstyled">
-                <li>Gauree Dangui</li>
-                <li>Abhishikth Matta</li>
-                <li>Dheera Konduri</li>
-                <li>N. Mohan Vamsi</li>
-              </ul>
+
+        <div class="row g-4">
+          <!-- Patron: C. Umamaheswara Rao -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/C._Uma_Maheswara_Rao.jpg/800px-C._Uma_Maheswara_Rao.jpg" alt="C. Umamaheswara Rao">
+              </div>
+       
+              <div class="card-body">
+                <h3 class="name">C. Umamaheswara Rao</h3>
+                <p class="role">Festival Patron</p>
+                <p class="bio">National Award-winning director & screenwriter. Former Jury Chair (West) and Member (Central) at the 67th National Awards. Founder of Dadasaheb Phalke School of Film Studies; noted for films like <em>Ankuram</em> that explore human rights and relations.</p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="soft-card h-100">
-              <h3 class="h6 mb-3"><i class="bi bi-mic"></i> Compères</h3>
-              <ul class="mb-0 list-unstyled">
-                <li>Jhansi</li>
-                <li>Uday Bhanu</li>
-              </ul>
+
+          <!-- Advisor: Premendra Mazumder -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="/Evently/assets/img/pm.png" alt="Premendra Mazumder">
+              </div>
+    
+              <div class="card-body">
+                <h3 class="name">PREMENDRA MAZUMDER</h3>
+                <p class="role">Festival Advisor</p>
+                <p class="bio">Film critic, curator, and organiser; VP, Federation of Film Societies of India; General Secretary, FIPRESCI India; founder of South Asian Short Film Festival & World Film Festival Kolkata. Recipient of Vijaya Mulay (2023), Satyajit Ray Memorial (2018), Ritwik Ghatak (2016).</p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="soft-card h-100">
-              <h3 class="h6 mb-3"><i class="bi bi-ui-checks"></i> Chairs – Preliminary Selection Boards</h3>
-              <ul class="mb-0 list-unstyled">
-                <li>Madhu Mahankali</li>
-                <li>Neelkanta</li>
-                <li>K. L. Prasad</li>
-                <li>V. N. Aditya</li>
-                <li>Sunita Tati</li>
-              </ul>
-              <hr>
-              <p class="mb-0"><i class="bi bi-people-fill"></i> <strong>Open Forum Co‑ordinator:</strong> Rohit Chandra</p>
+
+          <!-- Advisor: Christopher Dalton -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="/Evently/assets/img/CD2.png" alt="Christopher Dalton">
+              </div>
+    
+              <div class="card-body">
+                <h3 class="name">Christopher Dalton</h3>
+                <p class="role">Festival Advisor</p>
+                <p class="bio">Film critic, journalist, and festival organiser. Founder, Cinema Society of India; CEO, House of Illusions. Co-author and editor (Cinematic Illusions; Journal of Indian Cinema). Served on the Jury of the 67th National Film Awards.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Society note -->
+          <div class="col-12">
+            <div class="soft-card">
+              <h5 class="mb-1"><i class="bi bi-people me-2"></i>Also Supported By</h5>
+              <p class="mb-0">Members of the Society of Dadasaheb Phalke School of Film Studies.</p>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
+    <!-- ===== Administrative Team ===== -->
+    <section class="py-5">
+      <div class="container">
+        <div class="section-title">
+          <h2>Administrative Team</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Nandan Babu -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=1200&q=80" alt="Nandan Babu">
+              </div>
+     
+              <div class="card-body">
+                <h3 class="name">NANDAN BABU</h3>
+                <p class="role">Festival Director</p>
+                <p class="bio">M.Sc. Electronic Media; 18+ years across film & media. Assistant Director & Cinematographer (under Madhu Ambat), ad films director, Programming Head (Radio Mirchi), Content Editor (Gaana South). Principal, Dadasaheb Phalke School of Film Studies (8+ years).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Madhu Mahankali -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=80" alt="Madhu Mahankali">
+              </div>
+        
+              <div class="card-body">
+                <h3 class="name">MADHU MAHANKALI</h3>
+                <p class="role">Festival Director</p>
+                <p class="bio">Festival leadership & programming.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heshvanth Gurukul -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=1200&q=80" alt="Heshvanth Gurukul">
+              </div>
    
+              <div class="card-body">
+                <h3 class="name">HESHVANTH GURUKUL</h3>
+                <p class="role">Festival Operations Head</p>
+                <p class="bio">Assistant Director on Telugu features; writing team with director Bommarillu Bhaskar. Short film <em>Breaking Out</em> screened nationally & internationally. Leads HISFF operations, fostering cinematic excellence and dialogue.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Hospitality (optional block to keep) -->
-    <section id="hospitality" class="section">
+      </div>
+    </section>
+
+    <!-- ===== Festival people ===== -->
+    <section class="py-5">
       <div class="container">
         <div class="section-title">
-          <h2>Hospitality Overview</h2>
+          <h2>Festival people</h2>
+          <div class="underline"></div>
         </div>
-        <div class="soft-card">
-          <ul class="mb-0 list-unstyled">
-            <li>3‑night hotel stay for invited filmmakers & jurors with local transport</li>
-            <li>Meals for guests & crew with tea/coffee breaks (2 days)</li>
-            <li>Local pickups & drops, and reimbursements for out‑of‑town guests</li>
-          </ul>
+
+        <div class="row g-4">
+          <!-- Nasser -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Nassar_at_Oru_Kadhai_Sollattumaa_Audio_Launch_%28cropped%29.jpg/250px-Nassar_at_Oru_Kadhai_Sollattumaa_Audio_Launch_%28cropped%29.jpg" alt="Nasser">
+              </div>
+    
+              <div class="card-body">
+                <h3 class="name">NASSER</h3>
+                <p class="role">Actor • Director • President, Nadigar Sangam</p>
+                <p class="bio">Acclaimed actor-filmmaker with landmark roles (<em>Roja</em>, <em>Bombay</em>, <em>Baahubali</em>). Strong advocate of artists' welfare; multiple honours across states and national forums.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nagesh Kukunoor -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeYcFCJuSCsyoUUYjhVLwj7LGWxmbusqHA3nAcJ4Rw0UKPIFlOWNCaVS26lDg2XwZPNkWOHyiyeWdCVIwuMhkFmEaqUzNfa4Ubd1ub88&s=10" alt="Nagesh Kukunoor">
+              </div>
+        
+              <div class="card-body">
+                <h3 class="name">NAGESH KUKUNOOR</h3>
+                <p class="role">Writer • Director</p>
+                <p class="bio">Pioneer of Indian new-wave cinema with <em>Hyderabad Blues</em>, <em>Iqbal</em>, <em>Dor</em>. National & international awards; mentor to emerging filmmakers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manju Borah -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnYeZeVzVF1Y9EAyEjS2ZlP_y_r357XcS2zarYCMP1QOiG2t31RCiQmaslAb1SiNyqaiUBVKGtdEjllcJtmLYh1PpkCdfD4SUdVyCNw&s=10" alt="Manju Borah">
+              </div>
+  
+              <div class="card-body">
+                <h3 class="name">MANJU BORAH</h3>
+                <p class="role">Writer • Director</p>
+                <p class="bio">Eminent filmmaker from Assam/Northeast; recipient of nine National Awards. Works include <em>Baibhab</em>, <em>Ko Yad</em>, and animated feature on Srimanta Sankardev; strong cultural & academic contributor.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sunzu Bachaspatimayum -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="/Evently/assets/img/cb.png" alt="Sunzu Bachaspatimayum">
+              </div>
+      
+              <div class="card-body">
+                <h3 class="name">Sunzu Bachaspatimayum</h3>
+                <p class="role">Documentary Filmmaker</p>
+                <p class="bio">Radicalised Manipuri documentary cinema with <em>Rude Awakening</em>. Producer of National Award-winning <em>AFSPA 1958</em>; Secretary, MSFDS; Director, Eikhoigi Imphal IFF.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alexander Leo Pou -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="/Evently/assets/img/AL2.png" alt="Alexander Leo Pou">
+              </div>
+
+              <div class="card-body">
+                <h3 class="name">Alexander Leo Pou</h3>
+                <p class="role">Writer • Director • Producer</p>
+                <p class="bio">SRFTI alumnus; former Director, MSFTI; Film Facilitation Officer (East), NFDC Kolkata; coordinated national language-documentation project; Joint Director, EIIFF (2025).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- M. Sashi Kumar -->
+          <div class="col-md-6 col-lg-4">
+            <div class="team-card h-100">
+              <div class="image-container">
+                <img class="cover" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Sasikumar_02.jpg" alt="M. Sashi Kumar">
+              </div>
+
+              <div class="card-body">
+                <h3 class="name">M. Sashi Kumar</h3>
+                <p class="role">Founder, Asianet • Chairman, Asiaville Interactive</p>
+                <p class="bio">Journalist, media entrepreneur, filmmaker; Founder & Chair, Media Development Foundation (Asian College of Journalism). Pioneered India's first regional satellite channel; strong voice on journalism ethics and education.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
- <!-- Footer -->
 <footer id="footer" class="footer position-relative dark-background">
 
   <div class="container footer-top">
@@ -333,7 +601,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="speakers.html">Festival Advisor & Festival Team</a></li>
+          <li><a href="speakers.html">Festival people & Festival Team</a></li>
           <li><a href="venue.html">Venue</a></li>
         </ul>
       </div>
@@ -386,20 +654,10 @@
 </footer>
 
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
