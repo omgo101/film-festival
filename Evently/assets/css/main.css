@@ -1113,7 +1113,9 @@ section,
   background: #E3cebb;
   overflow: hidden;
 }
-
+.intro.section {
+  padding-bottom: 0 !important;
+}
 .intro::before {
   content: "";
   position: absolute;
