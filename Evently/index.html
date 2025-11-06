@@ -11,7 +11,8 @@
 
   <!-- Favicons -->
   <link href="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/logov2.png?raw=true" rel="icon">
-  <link href="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/logov2.png?raw=true" rel="apple-touch-icon">
+  <link href="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/logov2.png?raw=true"
+    rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -37,43 +38,132 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
-.faq-card {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-}
+    .faq-card {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+    }
 
-.faq-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
-}
+    .faq-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    }
 
-.faq-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
-  background-color: #e8f4ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #004793;
-  flex-shrink: 0;
-}
+    .faq-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      background-color: #e8f4ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #004793;
+      flex-shrink: 0;
+    }
 
-.faq-link {
-  transition: all 0.3s ease;
-}
+    .faq-link {
+      transition: all 0.3s ease;
+    }
 
-.faq-card:hover .faq-link {
-  transform: translateX(5px);
-}
+    .faq-card:hover .faq-link {
+      transform: translateX(5px);
+    }
 
-.card-title {
-  color: #004793;
-  font-weight: 600;
-  line-height: 1.4;
-}
-</style>
+    .card-title {
+      color: #004793;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+     .audience-section {
+    background: #f8f9fa;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+  }
+  
+  .audience-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .audience-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #A91D1D);
+    border-radius: 2px;
+  }
+  
+  .audience-item {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .audience-item:hover {
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+  }
+  
+  .audience-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b6b, #A91D1D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  
+  .audience-icon i {
+    font-size: 1.75rem;
+    color: white;
+  }
+  
+  .audience-item h5 {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .audience-item p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(90deg, #ff6b6b,#A91D1D);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+  }
+  
+  @media (max-width: 992px) {
+    .audience-section {
+      padding: 2rem;
+    }
+  }
+  </style>
 </head>
 
 <body class="index-page">
@@ -94,15 +184,15 @@
           <li><a href="schedule.html">Schedule</a></li>
           <li><a href="speakers.html">Festival people & team</a></li>
           <li><a href="venue.html">Venue</a></li>
-           <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
           <li class="dropdown"><a href="#"><span>More Pages</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              
+
               <li><a href="awards.html">Awards & Prizes</a></li>
               <li><a href="speaker-details.html">Festival people & Team Details</a></li>
               <li><a href="tickets.html">Tickets</a></li>
-         <li><a href="privacy.html">Terms & Privacy</a></li>
+              <li><a href="privacy.html">Terms & Privacy</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="404.html">404</a></li>
             </ul>
@@ -138,15 +228,15 @@
 
                 <p class="hero-subtitle">Celebrating regional storytelling, global cinema, and emerging filmmakers in
                   the heart of Telangana.</p>
-    <div class="cta-section">
+                <div class="cta-section">
 
-                <div class="cta-buttons">
-                  <a href="tickets.html" class="btn btn-primary btn-cta">Get Your Pass</a>
-                  <a href="https://filmfreeway.com/HISFF2025" class="btn btn-secondary btn-cta">Submit your Film</a>
+                  <div class="cta-buttons">
+                    <a href="tickets.html" class="btn btn-primary btn-cta">Get Your Pass</a>
+                    <a href="https://filmfreeway.com/HISFF2025" class="btn btn-secondary btn-cta">Submit your Film</a>
+                  </div>
+
+                  <p class="cta-note">Limited spots available • Enjoy special pricing for a limited time
                 </div>
-
-                <p class="cta-note">Limited spots available • Enjoy special pricing for a limited time
-              </div>
 
                 <div class="event-details">
                   <div class="detail-item">
@@ -160,7 +250,7 @@
                 </div>
 
               </div>
-      
+
               <div class="countdown-section">
 
                 <h3 class="countdown-label">Festival Starts In</h3>
@@ -186,7 +276,7 @@
 
               </div>
 
-    
+
             </div><!-- End col-lg-10 -->
 
           </div><!-- End row -->
@@ -206,15 +296,13 @@
           <div class="col-lg-6">
             <div class="content">
               <h2 style="color: #004793;">Hyderabad International Short Film Festival</h2>
-
-              <p class="lead">The Hyderabad International Short Film Festival (HISFF) is conceived as an annual, marquee cultural event
-                in Telangana by Dadasaheb Phalke School of Film Studies. This festival aims at uniting global cinema,
-                regional storytelling, and industry linkages providing a platform for the youth.</p>
-              <p>Over 2 days each year, HISFF will host film screenings (short films), panel discussions, and heritage
-                screenings. By embedding Telangana's cultural identity into the festival, HISFF aims to position
-                Hyderabad as a global film hub, promote local creative talent (especially youth), spur economic and
-                tourism benefits, and strengthen the state's ecosystem pertaining film.</p>
-
+              <p class="lead">Hyderabad International Short Film Festival</p>
+              <p>Where stories from Andhra Pradesh and Telangana meet the world.</p>
+              <p>The Hyderabad International Short Film Festival (HISFF), presented by the Dadasaheb Phalke School of
+                Film Studies, is the first short film festival of Andhra Pradesh and Telangana — a landmark initiative
+                designed to celebrate the power of short storytelling.</p>
+              <p>Edition 1 marks the beginning of a long journey to inspire, innovate, and empower filmmakers to create
+                films of impact from the two states and beyond.</p>
               <div class="stats-grid">
                 <div class="stat-item">
                   <div class="stat-number">2</div>
@@ -243,9 +331,9 @@
 
           <div class="col-lg-6">
             <div class="visual-section">
-              <div class="image-wrapper"style="background-color: white; ">
+              <div class="image-wrapper" style="background-color: white; ">
                 <img src="assets/img/logon.png" alt="Film Festival" class="img-fluid">
-     
+
                 <div class="floating-badge">
                   <i class="bi bi-calendar-event"></i>
                   <span>December 19-21, 2025</span>
@@ -269,12 +357,87 @@
 
         </div>
 
-       
+
       </div>
 
     </section><!-- /Intro Section -->
+ <div class="row mt-5">
+          <div class="col-12">
+            <div class="audience-section">
+              <h3>Festival Vision & Objectives</h3>
+              <div class="row gy-4 mt-2">
 
-       <!-- FAQ Section -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="audience-item">
+                    <div class="audience-icon"><i class="bi bi-stars"></i></div>
+                    <h5>Annual Event</h5>
+                    <p>An expressive yearly celebration of film art and technique.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="audience-item">
+                    <div class="audience-icon"><i class="bi bi-globe2"></i></div>
+                    <h5>Global Blend</h5>
+                    <p>Diverse voices and cultures strengthening the human spirit.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="audience-item">
+                    <div class="audience-icon"><i class="bi bi-geo"></i></div>
+                    <h5>Regional Focus</h5>
+                    <p>Showcasing Hyderabad's vibrant film culture & emerging talent.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <div class="audience-item">
+                    <div class="audience-icon"><i class="bi bi-link-45deg"></i></div>
+                    <h5>Networking</h5>
+                    <p>Linking filmmakers with producers, distributors & platforms.</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row gy-4 mt-1">
+                <div class="col-md-6 col-lg-3">
+                  <div class="audience-item">
+                    <div class="audience-icon"><i class="bi bi-airplane"></i></div>
+                    <h5>Tourism</h5>
+                    <p>Positioning Hyderabad as a lively international film destination.</p>
+                  </div>
+                </div>
+               
+              </div>
+
+            </div><!-- End Vision & Objectives -->
+          </div>
+        </div><!-- End Row -->
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="audience-section">
+              <h3>Who is it for?</h3>
+              <p class="text-center">Filmmakers, students, cinephiles, industry professionals, media, sponsors and volunteers are all welcome.</p>
+              <div class="row gy-4 mt-4">
+                <div class="col-lg-2 col-md-4 col-6"><div class="audience-item"><div class="audience-icon"><i class="bi bi-camera-video"></i></div><h5>Filmmakers</h5><p>Submissions & screenings</p></div></div>
+                <div class="col-lg-2 col-md-4 col-6"><div class="audience-item"><div class="audience-icon"><i class="bi bi-mortarboard"></i></div><h5>Students</h5><p>Learning & exposure</p></div></div>
+                <div class="col-lg-2 col-md-4 col-6"><div class="audience-item"><div class="audience-icon"><i class="bi bi-heart"></i></div><h5>Cinephiles</h5><p>Discover new voices</p></div></div>
+                <div class="col-lg-2 col-md-4 col-6"><div class="audience-item"><div class="audience-icon"><i class="bi bi-people"></i></div><h5>Industry</h5><p>Network & scout</p></div></div>
+                <div class="col-lg-2 col-md-4 col-6"><div class="audience-item"><div class="audience-icon"><i class="bi bi-megaphone"></i></div><h5>Media</h5><p>Coverage & stories</p></div></div>
+                <div class="col-lg-2 col-md-4 col-6"><div class="audience-item"><div class="audience-icon"><i class="bi bi-hand-thumbs-up"></i></div><h5>Sponsors</h5><p>Brand partnerships</p></div></div>
+              </div>
+
+              <div class="text-center mt-4">
+                <a href="tickets.html" class="btn-primary">Get Passes</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    <!-- FAQ Section -->
     <section id="faq" class="faq section">
 
       <div class="container">
@@ -296,7 +459,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">What is the film submission process?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Learn about eligibility criteria, submission guidelines, and deadlines for film entries.</p>
+                <p class="card-text text-muted flex-grow-1">Learn about eligibility criteria, submission guidelines, and
+                  deadlines for film entries.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -314,7 +478,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">what are the Rules and Regulation for Film Submission?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Find details about Rules and Regulation for Film Submission, and many more information.</p>
+                <p class="card-text text-muted flex-grow-1">Find details about Rules and Regulation for Film Submission,
+                  and many more information.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -332,7 +497,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">Where can I find the festival schedule?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">View the complete schedule of screenings, panel discussions, and special events.</p>
+                <p class="card-text text-muted flex-grow-1">View the complete schedule of screenings, panel discussions,
+                  and special events.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -350,7 +516,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">What awards and categories are available?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Discover the award categories, judging criteria, and prize details for winning films.</p>
+                <p class="card-text text-muted flex-grow-1">Discover the award categories, judging criteria, and prize
+                  details for winning films.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -368,7 +535,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">Where is the festival venue located?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Get information about the festival venue, directions, and recommended accommodations.</p>
+                <p class="card-text text-muted flex-grow-1">Get information about the festival venue, directions, and
+                  recommended accommodations.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -386,7 +554,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">How can I contact the festival organizers?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Find contact information and support channels for any additional questions or assistance.</p>
+                <p class="card-text text-muted flex-grow-1">Find contact information and support channels for any
+                  additional questions or assistance.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -404,7 +573,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">Who are the festival guests and speakers?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Meet our distinguished guests, industry experts, and special speakers for this year's festival.</p>
+                <p class="card-text text-muted flex-grow-1">Meet our distinguished guests, industry experts, and special
+                  speakers for this year's festival.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -422,7 +592,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">Who are the festival sponsors?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Discover the organizations and companies supporting our festival and their contributions.</p>
+                <p class="card-text text-muted flex-grow-1">Discover the organizations and companies supporting our
+                  festival and their contributions.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -440,7 +611,8 @@
                   </div>
                   <h4 class="card-title mb-0 fs-5">What is the ticket cancellation policy?</h4>
                 </div>
-                <p class="card-text text-muted flex-grow-1">Learn about our refund policy, cancellation procedures, and transfer options for tickets.</p>
+                <p class="card-text text-muted flex-grow-1">Learn about our refund policy, cancellation procedures, and
+                  transfer options for tickets.</p>
                 <div class="faq-link mt-2">
                   <span class="text-primary fw-semibold">Learn More <i class="bi bi-arrow-right ms-1"></i></span>
                 </div>
@@ -457,7 +629,7 @@
       </div>
 
     </section><!-- /FAQ Section -->
-    
+
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
@@ -523,7 +695,8 @@
             <div class="cta-content">
               <div class="cta-buttons">
                 <a href="tickets.html" class="btn btn-primary btn-lg me-3">Buy Tickets</a>
-                <a href="https://filmfreeway.com/HISFF2025" class="btn btn-outline-secondary btn-lg">Submit Your Film</a>
+                <a href="https://filmfreeway.com/HISFF2025" class="btn btn-outline-secondary btn-lg">Submit Your
+                  Film</a>
               </div>
               <div class="security-note mt-4">
                 <small>
@@ -538,91 +711,91 @@
 
     </section><!-- /Call To Action Section -->
 
-   
 
-    
+
+
   </main>
 
- <!-- Footer -->
-<footer id="footer" class="footer position-relative dark-background">
+  <!-- Footer -->
+  <footer id="footer" class="footer position-relative dark-background">
 
-  <div class="container footer-top">
-    <div class="row gy-4">
-      <!-- 4/12: About -->
-      <div class="col-lg-4 col-md-6 footer-about">
-        <div class="footer-contact pt-3">
-          <p>Dadasaheb Phalke School of Film Studies,</p>
-          <p>8-2-334/45/46, Green Valley, Banjara Hills,</p>
-          <p>Hyderabad, Telangana 500034</p>
-          <p class="mt-3"><strong>Phone:</strong> <span>+91 9000021160</span></p>
-          <p><strong>Email:</strong> <span>hisff2025@gmail.com</span></p>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <!-- 4/12: About -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <div class="footer-contact pt-3">
+            <p>Dadasaheb Phalke School of Film Studies,</p>
+            <p>8-2-334/45/46, Green Valley, Banjara Hills,</p>
+            <p>Hyderabad, Telangana 500034</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9000021160</span></p>
+            <p><strong>Email:</strong> <span>hisff2025@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/hisff25"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1Gf6NqXosM/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/hisff25?igsh=bW54NjlvbnNjeWZ1"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
-        <div class="social-links d-flex mt-4">
-          <a href="https://x.com/hisff25"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.facebook.com/share/1Gf6NqXosM/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/hisff25?igsh=bW54NjlvbnNjeWZ1"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+
+        <!-- 2/12: Quick Links -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="speakers.html">Festival people & Festival Team</a></li>
+            <li><a href="venue.html">Venue</a></li>
+          </ul>
         </div>
-      </div>
 
-      <!-- 2/12: Quick Links -->
-      <div class="col-lg-2 col-md-6 footer-links">
-        <h4>Quick Links</h4>
-        <ul class="list-unstyled mb-0">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="speakers.html">Festival people & Festival Team</a></li>
-          <li><a href="venue.html">Venue</a></li>
-        </ul>
-      </div>
+        <!-- 2/12: Explore -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Explore</h4>
+          <ul class="list-unstyled mb-0">
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="tickets.html">Festival Tickets</a></li>
+            <li><a href="awards.html">Awards & Prizes</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
 
-      <!-- 2/12: Explore -->
-      <div class="col-lg-2 col-md-6 footer-links">
-        <h4>Explore</h4>
-        <ul class="list-unstyled mb-0">
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="tickets.html">Festival Tickets</a></li>
-          <li><a href="awards.html">Awards & Prizes</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+        <!-- 2/12: Resources (merged Terms/FAQ/404) -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Resources</h4>
+          <ul class="list-unstyled mb-0">
+            <li><a href="privacy.html">Terms & Privacy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="404.html">404</a></li>
+          </ul>
+        </div>
 
-      <!-- 2/12: Resources (merged Terms/FAQ/404) -->
-      <div class="col-lg-2 col-md-6 footer-links">
-        <h4>Resources</h4>
-        <ul class="list-unstyled mb-0">
-          <li><a href="privacy.html">Terms & Privacy</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="404.html">404</a></li>
-        </ul>
-      </div>
-
-      <!-- 2/12: Associates/Sponsors -->
-       <div class="col-lg-2 col-md-6 footer-links">
-         <h4 class="mt-3">Collaborator</h4>
-        <ul class="list-unstyled mb-0">
-          <li><a href="https://tgfilm.telangana.gov.in/">TGFDC</a></li>
-        </ul>
-        <h4>Promoter</h4>
-        <ul class="list-unstyled mb-3">
-          <li><a href="https://tourism.telangana.gov.in/">YAT&C</a></li>
-        </ul>
-        <h4>Organizer</h4>
-        <ul class="list-unstyled mb-3">
-          <li><a href="https://dpsfs.edu.in/">Dadasaheb Phalke School of Film Studies</a></li>
-        </ul>
+        <!-- 2/12: Associates/Sponsors -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4 class="mt-3">Collaborator</h4>
+          <ul class="list-unstyled mb-0">
+            <li><a href="https://tgfilm.telangana.gov.in/">TGFDC</a></li>
+          </ul>
+          <h4>Promoter</h4>
+          <ul class="list-unstyled mb-3">
+            <li><a href="https://tourism.telangana.gov.in/">YAT&C</a></li>
+          </ul>
+          <h4>Organizer</h4>
+          <ul class="list-unstyled mb-3">
+            <li><a href="https://dpsfs.edu.in/">Dadasaheb Phalke School of Film Studies</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container copyright text-center mt-4">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename">Hyderabad International Short Film Festival</strong>
-      <span>All Rights Reserved</span>
-    </p>
-  </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Hyderabad International Short Film Festival</strong>
+        <span>All Rights Reserved</span>
+      </p>
+    </div>
 
-</footer>
+  </footer>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
