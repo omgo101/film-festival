@@ -487,10 +487,10 @@
     </section>
 
     <!-- ===== Festival people ===== -->
-  <section class="py-5" style="background: #ffffff; color: #333;">
+<section class="py-5" style="background: #ffffff; color: #333;">
   <div class="container text-center">
-    <h2 style="color: #2c3e50; font-size: 2.8rem; margin-bottom: 1rem; font-weight: 700;">Festival Dignitaries</h2>
-    <p class="lead" style="color: #7f8c8d; margin-bottom: 4rem; font-size: 1.2rem;">Click on any dignitary to learn more</p>
+    <h2 style="color: #2c3e50; font-size: clamp(2rem, 5vw, 2.8rem); margin-bottom: 1rem; font-weight: 700;">Festival Dignitaries</h2>
+    <p class="lead" style="color: #7f8c8d; margin-bottom: clamp(2rem, 6vw, 4rem); font-size: clamp(1rem, 3vw, 1.2rem);">Click on any dignitary to learn more</p>
 
     <div class="circular-container">
       <!-- Nasser -->
@@ -554,34 +554,34 @@
       </div>
     </div>
 
-    <p style="color: #95a5a6; font-size: 1rem; margin-top: 40px;">Click outside to reset view</p>
+    <p style="color: #95a5a6; font-size: clamp(0.8rem, 2vw, 1rem); margin-top: clamp(2rem, 5vw, 40px);">Click outside to reset view</p>
   </div>
 </section>
 
 <style>
+/* Base responsive container */
 .circular-container {
   position: relative;
-  width: 95vw;
-  height: 95vw;
-  max-width: 800px;
-  max-height: 800px;
-  margin: 50px auto;
+  width: min(95vw, 800px);
+  height: min(95vw, 800px);
+  margin: clamp(2rem, 5vw, 50px) auto;
 }
 
+/* Base card styles with responsive units */
 .person-card {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 160px;
-  height: 160px;
+  width: clamp(80px, 15vw, 160px);
+  height: clamp(80px, 15vw, 160px);
   border-radius: 50%;
   cursor: pointer;
-  transform: translate(-50%, -50%) rotate(var(--angle)) translate(280px) rotate(calc(-1 * var(--angle)));
+  transform: translate(-50%, -50%) rotate(var(--angle)) translate(clamp(140px, 25vw, 280px)) rotate(calc(-1 * var(--angle)));
   transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 0 12px 35px rgba(0,0,0,0.2);
   overflow: hidden;
   background: white;
-  border: 4px solid #3498db;
+  border: clamp(2px, 0.5vw, 4px) solid #3498db;
 }
 
 .card-image {
@@ -600,7 +600,7 @@
   width: 100%;
   height: 100%;
   background: white;
-  padding: 25px;
+  padding: clamp(15px, 3vw, 25px);
   transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   opacity: 0;
   display: flex;
@@ -612,16 +612,16 @@
 
 .card-content h3 {
   color: #2c3e50;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  margin-bottom: clamp(0.5rem, 1.5vw, 1rem);
   line-height: 1.2;
   font-weight: 700;
 }
 
 .card-content .role {
   color: #e74c3c;
-  font-size: 1.1rem;
-  margin-bottom: 1.2rem;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  margin-bottom: clamp(0.8rem, 2vw, 1.2rem);
   font-style: italic;
   line-height: 1.3;
   font-weight: 600;
@@ -629,50 +629,101 @@
 
 .card-content .bio {
   color: #555;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 1.8vw, 1rem);
   line-height: 1.6;
   overflow-y: auto;
   flex-grow: 1;
-  padding-right: 10px;
+  padding-right: clamp(5px, 1vw, 10px);
 }
 
-/* Active state - HUGE circle and proper card */
+/* Active state - Fully responsive expanded card */
 .person-card.active {
   transform: translate(-50%, -50%) scale(1);
   z-index: 100;
-  border-radius: 25px;
-  width: 500px;
-  height: 600px;
-  max-width: 90vw;
-  max-height: 80vh;
-  border: 4px solid #2980b9;
+  border-radius: clamp(15px, 4vw, 25px);
+  width: min(90vw, 500px);
+  height: min(80vh, 600px);
+  border: clamp(2px, 0.5vw, 4px) solid #2980b9;
   box-shadow: 0 25px 60px rgba(0,0,0,0.3);
 }
 
 .person-card.active .card-image {
-  height: 280px;
-  border-radius: 21px 21px 0 0;
+  height: clamp(150px, 35vh, 280px);
+  border-radius: clamp(13px, 3vw, 21px) clamp(13px, 3vw, 21px) 0 0;
   background-size: cover;
   background-position: top center;
 }
 
 .person-card.active .card-content {
-  top: 280px;
+  top: clamp(150px, 35vh, 280px);
   opacity: 1;
-  border-radius: 0 0 21px 21px;
-  height: calc(100% - 280px);
-  padding: 30px;
+  border-radius: 0 0 clamp(13px, 3vw, 21px) clamp(13px, 3vw, 21px);
+  height: calc(100% - clamp(150px, 35vh, 280px));
+  padding: clamp(15px, 3vw, 30px);
 }
 
 /* Make other cards smaller when one is active */
 .circular-container.active .person-card:not(.active) {
   opacity: 0.3;
-  transform: translate(-50%, -50%) rotate(var(--angle)) translate(280px) rotate(calc(-1 * var(--angle))) scale(0.6);
+  transform: translate(-50%, -50%) rotate(var(--angle)) translate(clamp(140px, 25vw, 280px)) rotate(calc(-1 * var(--angle))) scale(0.6);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  .circular-container {
+    width: min(90vw, 400px);
+    height: min(90vw, 400px);
+  }
+  
+  .person-card {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translate(clamp(120px, 22vw, 200px)) rotate(calc(-1 * var(--angle)));
+  }
+  
+  .circular-container.active .person-card:not(.active) {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translate(clamp(120px, 22vw, 200px)) rotate(calc(-1 * var(--angle))) scale(0.4);
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .circular-container {
+    width: min(85vw, 350px);
+    height: min(85vw, 350px);
+  }
+  
+  .person-card {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translate(clamp(100px, 20vw, 180px)) rotate(calc(-1 * var(--angle)));
+  }
+  
+  .circular-container.active .person-card:not(.active) {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translate(clamp(100px, 20vw, 180px)) rotate(calc(-1 * var(--angle))) scale(0.3);
+  }
+  
+  .person-card.active {
+    width: min(95vw, 320px);
+    height: min(75vh, 450px);
+  }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+  .person-card.active {
+    height: min(90vh, 500px);
+  }
+  
+  .person-card.active .card-image {
+    height: clamp(120px, 25vh, 200px);
+  }
+  
+  .person-card.active .card-content {
+    top: clamp(120px, 25vh, 200px);
+    height: calc(100% - clamp(120px, 25vh, 200px));
+  }
 }
 
 /* Scrollbar styling */
 .card-content .bio::-webkit-scrollbar {
-  width: 6px;
+  width: clamp(3px, 0.8vw, 6px);
 }
 
 .card-content .bio::-webkit-scrollbar-track {
@@ -689,146 +740,18 @@
   background: #95a5a6;
 }
 
-/* Responsive design */
-@media (max-width: 1200px) {
-  .circular-container {
-    max-width: 700px;
-    max-height: 700px;
-  }
-  
-  .person-card {
-    width: 140px;
-    height: 140px;
-    transform: translate(-50%, -50%) rotate(var(--angle)) translate(240px) rotate(calc(-1 * var(--angle)));
-  }
-  
-  .person-card.active {
-    width: 450px;
-    height: 550px;
-  }
-  
-  .person-card.active .card-image {
-    height: 250px;
-  }
-  
-  .person-card.active .card-content {
-    top: 250px;
-    height: calc(100% - 250px);
-    padding: 25px;
-  }
-  
-  .circular-container.active .person-card:not(.active) {
-    transform: translate(-50%, -50%) rotate(var(--angle)) translate(240px) rotate(calc(-1 * var(--angle))) scale(0.6);
-  }
+/* Prevent text selection during animation */
+.person-card {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-@media (max-width: 768px) {
-  .circular-container {
-    width: 90vw;
-    height: 90vw;
-    max-width: 600px;
-    max-height: 600px;
-  }
-  
-  .person-card {
-    width: 120px;
-    height: 120px;
-    transform: translate(-50%, -50%) rotate(var(--angle)) translate(200px) rotate(calc(-1 * var(--angle)));
-  }
-  
-  .person-card.active {
-    width: 400px;
-    height: 500px;
-  }
-  
-  .person-card.active .card-image {
-    height: 220px;
-  }
-  
-  .person-card.active .card-content {
-    top: 220px;
-    height: calc(100% - 220px);
-    padding: 20px;
-  }
-  
-  .card-content h3 {
-    font-size: 1.4rem;
-  }
-  
-  .card-content .role {
-    font-size: 1rem;
-  }
-  
-  .circular-container.active .person-card:not(.active) {
-    transform: translate(-50%, -50%) rotate(var(--angle)) translate(200px) rotate(calc(-1 * var(--angle))) scale(0.5);
-  }
-}
-
-@media (max-width: 576px) {
-  .circular-container {
-    width: 85vw;
-    height: 85vw;
-    max-width: 500px;
-    max-height: 500px;
-  }
-  
-  .person-card {
-    width: 100px;
-    height: 100px;
-    transform: translate(-50%, -50%) rotate(var(--angle)) translate(170px) rotate(calc(-1 * var(--angle)));
-  }
-  
-  .person-card.active {
-    width: 350px;
-    height: 450px;
-  }
-  
-  .person-card.active .card-image {
-    height: 180px;
-  }
-  
-  .person-card.active .card-content {
-    top: 180px;
-    height: calc(100% - 180px);
-    padding: 18px;
-  }
-  
-  .card-content h3 {
-    font-size: 1.3rem;
-  }
-  
-  .card-content .role {
-    font-size: 0.95rem;
-  }
-  
-  .card-content .bio {
-    font-size: 0.9rem;
-  }
-  
-  .circular-container.active .person-card:not(.active) {
-    transform: translate(-50%, -50%) rotate(var(--angle)) translate(170px) rotate(calc(-1 * var(--angle))) scale(0.4);
-  }
-}
-
-@media (max-width: 400px) {
-  .person-card.active {
-    width: 320px;
-    height: 420px;
-  }
-  
-  .person-card.active .card-image {
-    height: 160px;
-  }
-  
-  .person-card.active .card-content {
-    top: 160px;
-    height: calc(100% - 160px);
-    padding: 15px;
-  }
-  
-  .card-content h3 {
-    font-size: 1.2rem;
-  }
+/* Smooth scaling for performance */
+.person-card {
+  transform-origin: center;
+  will-change: transform;
 }
 </style>
 
@@ -852,6 +775,17 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", () => {
     cards.forEach(c => c.classList.remove("active"));
     container.classList.remove("active");
+  });
+
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    // Force reflow to update CSS calculations
+    container.classList.remove('active');
+    setTimeout(() => {
+      if (document.querySelector('.person-card.active')) {
+        container.classList.add('active');
+      }
+    }, 10);
   });
 });
 </script>
