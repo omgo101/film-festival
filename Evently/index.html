@@ -285,7 +285,131 @@
         </div>
 
     </section><!-- /Hero Section -->
+<!-- Carousel Section -->
+<!-- Carousel Section -->
+<section id="carousel" class="carousel-section section">
 
+  <div class="container">
+
+    <div id="festivalCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+      
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#festivalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#festivalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#festivalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#festivalCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner rounded-4">
+        
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-slide rounded-4" style="background: url('https://images.unsplash.com/photo-1762255421012-9fd499621e7e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870') center/cover;">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-slide rounded-4" style="background: url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;">
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-slide rounded-4" style="background: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2050&q=80') center/cover;">
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="carousel-slide rounded-4" style="background: url('https://images.unsplash.com/photo-1762255421012-9fd499621e7e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870') center/cover;">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#festivalCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#festivalCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+  </div>
+
+</section><!-- /Carousel Section -->
+
+<style>
+/* Carousel Styles */
+.carousel-section {
+  padding: 2rem 0 !important;
+  background: white;
+}
+
+.carousel-slide {
+  height: 50vh;
+  min-height: 400px;
+  position: relative;
+  border-radius: 1rem !important;
+}
+
+.carousel-inner {
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+  
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #004793;
+}
+
+.carousel-indicators button.active {
+  background-color: #A91D1D;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .carousel-section {
+    padding: 1.5rem 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-slide {
+    height: 35vh;
+    min-height: 250px;
+  }
+  
+  .carousel-section {
+    padding: 1rem 0 !important;
+  }
+}
+</style>
     <!-- Intro Section -->
     <section id="intro" class="intro section">
 
