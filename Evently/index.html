@@ -620,78 +620,58 @@
 
           <div class="col-lg-6">
             <div class="visual-section">
-              <div class="image-wrapper"
-                style="background-color: white; position: relative; overflow: hidden; border-radius: 15px;">
-                <!-- 🎬 Video background -->
-                <video autoplay muted loop playsinline class="img-fluid w-100" style="height: auto; object-fit: cover;">
-                  <source src="https://files.catbox.moe/4oyqyi.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
+             <div class="image-wrapper" style="background-color: white; position: relative; overflow: hidden; border-radius: 15px;">
+  <!-- 🎬 Video with lazy loading -->
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    class="img-fluid w-100" 
+    style="height: auto; object-fit: cover; display: block; width: 100%; border: none; margin: 0; padding: 0; vertical-align: middle;"
+    loading="lazy"
+    poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='%23999'%3ELoading Video...%3C/text%3E%3C/svg%3E"
+  >
+    <source src="https://files.catbox.moe/4oyqyi.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-                <!-- ❤️ Floating red date badge -->
-                <div class="floating-badge">
-                  <i class="bi bi-calendar-event"></i>
-                  <span>December 19–21, 2025</span>
-                </div>
-              </div>
+  <!-- ❤️ Responsive floating red date badge -->
+  <div class="floating-badge" style="position: absolute; top: 15px; right: 15px; background: #b5121b; color: #fff; padding: 8px 16px; border-radius: 25px; display: flex; align-items: center; gap: 6px; font-size: 0.9rem; font-weight: 600; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); z-index: 10; transition: all 0.3s ease-in-out; max-width: calc(100% - 30px);">
+    <i class="bi bi-calendar-event" style="font-size: 1rem; flex-shrink: 0;"></i>
+    <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">December 19–21, 2025</span>
+  </div>
+</div>
 
-              <style>
-                .floating-badge {
-                  position: absolute;
-                  top: 15px;
-                  right: 15px;
-                  background: #b5121b;
-                  /* Red color */
-                  color: #fff;
-                  padding: 8px 16px;
-                  border-radius: 25px;
-                  display: flex;
-                  align-items: center;
-                  gap: 6px;
-                  font-size: 0.9rem;
-                  font-weight: 600;
-                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-                  z-index: 10;
-                  transition: all 0.3s ease-in-out;
-                }
+<style>
+  .floating-badge:hover {
+    background: #8b0e16;
+    transform: scale(1.05);
+  }
 
-                .floating-badge i {
-                  font-size: 1rem;
-                }
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .floating-badge {
+      top: 10px !important;
+      right: 10px !important;
+      font-size: 0.8rem !important;
+      padding: 6px 12px !important;
+      border-radius: 20px !important;
+    }
+  }
 
-                .floating-badge:hover {
-                  background: #8b0e16;
-                  /* slightly darker red on hover */
-                  transform: scale(1.05);
-                }
-
-                /* 💡 Fix for bottom gap under video */
-                .image-wrapper video {
-                  display: block;
-                  /* Removes inline gap */
-                  width: 100%;
-                  /* Ensures full width */
-                  height: auto;
-                  object-fit: cover;
-                  border: none;
-                  margin: 0;
-                  padding: 0;
-                  vertical-align: middle;
-                  /* Prevents baseline gap */
-                }
-
-                /* Slightly smaller badge for mobile */
-                @media (max-width: 576px) {
-                  .floating-badge {
-                    top: 10px;
-                    right: 10px;
-                    font-size: 0.8rem;
-                    padding: 6px 12px;
-                    border-radius: 20px;
-                  }
-                }
-              </style>
-
+  @media (max-width: 400px) {
+    .floating-badge {
+      font-size: 0.75rem !important;
+      padding: 5px 10px !important;
+      gap: 4px !important;
+    }
+    
+    .floating-badge i {
+      font-size: 0.9rem !important;
+    }
+  }
+</style>
 
               <div class="highlight-cards">
                 <div class="highlight-card">
