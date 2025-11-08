@@ -302,21 +302,7 @@
       border-radius: 50%;
     }
 
-    /* Fix for navbar active indicator */
-    .header .navmenu ul li a.active {
-      color: #ff6b6b;
-      position: relative;
-    }
-
-    .header .navmenu ul li a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: #ff6b6b;
-    }
+   
 
     /* Fix alignment issues */
     .about-page .content p:not(.lead) {
@@ -475,12 +461,14 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo (3).png" alt=""> -->
         <img src="assets/img/logon.png" alt="HISFF Logo" class="logo">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="schedule.html">Schedule</a></li>
           <li><a href="speakers.html">Festival people & team</a></li>
@@ -489,7 +477,9 @@
           <li class="dropdown"><a href="#"><span>More Pages</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
+
               <li><a href="awards.html">Awards & Prizes</a></li>
+
               <li><a href="tickets.html">Tickets</a></li>
               <li><a href="privacy.html">Terms & Privacy</a></li>
               <li><a href="faq.html">FAQ</a></li>
