@@ -536,7 +536,7 @@
     </section>
 
     <!-- ===== Festival people ===== -->
-   <!-- ===== Festival Dignitaries ===== -->
+<!-- ===== Festival Dignitaries ===== -->
 <section class="py-5" style="background: #ffffff; color: #333;">
   <div class="container text-center">
     <h2 style="color: #2c3e50; font-size: clamp(2rem, 5vw, 2.8rem); margin-bottom: 1rem; font-weight: 700;">
@@ -549,9 +549,11 @@
     <div class="circular-container">
       <!-- Nasser -->
       <div class="person-card" data-angle="0">
-        <div
-          class="card-image"
-          style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Nassar_at_Oru_Kadhai_Sollattumaa_Audio_Launch_%28cropped%29.jpg/250px-Nassar_at_Oru_Kadhai_Sollattumaa_Audio_Launch_%28cropped%29.jpg');">
+        <div class="card-touch-target">
+          <div
+            class="card-image"
+            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Nassar_at_Oru_Kadhai_Sollattumaa_Audio_Launch_%28cropped%29.jpg/250px-Nassar_at_Oru_Kadhai_Sollattumaa_Audio_Launch_%28cropped%29.jpg');">
+          </div>
         </div>
         <div class="card-content">
           <h3>NASSER</h3>
@@ -564,9 +566,11 @@
 
       <!-- Nagesh Kukunoor -->
       <div class="person-card" data-angle="60">
-        <div
-          class="card-image"
-          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeYcFCJuSCsyoUUYjhVLwj7LGWxmbusqHA3nAcJ4Rw0UKPIFlOWNCaVS26lDg2XwZPNkWOHyiyeWdCVIwuMhkFmEaqUzNfa4Ubd1ub88&s=10');">
+        <div class="card-touch-target">
+          <div
+            class="card-image"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeYcFCJuSCsyoUUYjhVLwj7LGWxmbusqHA3nAcJ4Rw0UKPIFlOWNCaVS26lDg2XwZPNkWOHyiyeWdCVIwuMhkFmEaqUzNfa4Ubd1ub88&s=10');">
+          </div>
         </div>
         <div class="card-content">
           <h3>NAGESH KUKUNOOR</h3>
@@ -579,7 +583,9 @@
 
       <!-- M. Sashi Kumar -->
       <div class="person-card" data-angle="120">
-        <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/27/Sasikumar_02.jpg');"></div>
+        <div class="card-touch-target">
+          <div class="card-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/27/Sasikumar_02.jpg');"></div>
+        </div>
         <div class="card-content">
           <h3>SASHI KUMAR</h3>
           <p class="role">Founder, Asianet • Chairman, Asiaville Interactive</p>
@@ -590,7 +596,9 @@
 
       <!-- Sunzu Bachaspatimayum -->
       <div class="person-card" data-angle="180">
-        <div class="card-image" style="background-image: url('https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/cb.png?raw=true');"></div>
+        <div class="card-touch-target">
+          <div class="card-image" style="background-image: url('https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/cb.png?raw=true');"></div>
+        </div>
         <div class="card-content">
           <h3>SUNZU BACHASPATIMAYUM</h3>
           <p class="role">Documentary Filmmaker</p>
@@ -601,7 +609,9 @@
 
       <!-- Alexander Leo Pou -->
       <div class="person-card" data-angle="240">
-        <div class="card-image" style="background-image: url('https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/AL2.png?raw=true');"></div>
+        <div class="card-touch-target">
+          <div class="card-image" style="background-image: url('https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/AL2.png?raw=true');"></div>
+        </div>
         <div class="card-content">
           <h3>ALEXANDER LEO POU</h3>
           <p class="role">Writer • Director • Producer</p>
@@ -612,9 +622,11 @@
 
       <!-- Manju Borah -->
       <div class="person-card" data-angle="300">
-        <div
-          class="card-image"
-          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnYeZeVzVF1Y9EAyEjS2ZlP_y_r357XcS2zarYCMP1QOiG2t31RCiQmaslAb1SiNyqaiUBVKGtdEjllcJtmLYh1PpkCdfD4SUdVyCNw&s=10');">
+        <div class="card-touch-target">
+          <div
+            class="card-image"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnYeZeVzVF1Y9EAyEjS2ZlP_y_r357XcS2zarYCMP1QOiG2t31RCiQmaslAb1SiNyqaiUBVKGtdEjllcJtmLYh1PpkCdfD4SUdVyCNw&s=10');">
+          </div>
         </div>
         <div class="card-content">
           <h3>MANJU BORAH</h3>
@@ -637,6 +649,9 @@
   width: min(95vw, 900px);
   height: min(95vw, 900px);
   margin: 40px auto;
+  touch-action: manipulation;
+  /* Enable GPU acceleration */
+  transform: translateZ(0);
 }
 
 .person-card {
@@ -646,14 +661,37 @@
   width: clamp(90px, 16vw, 180px);
   height: clamp(90px, 16vw, 180px);
   border-radius: 50%;
-  cursor: pointer;
   transform: translate(-50%, -50%) rotate(calc(var(--angle) - 90deg))
     translate(clamp(160px, 28vw, 320px))
     rotate(calc(-1 * (var(--angle) - 90deg)));
-  transition: all 0.7s ease;
+  /* Smoother transitions with better timing functions */
+  transition: 
+    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    border-radius 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 0.4s ease,
+    border-color 0.4s ease;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
   background: white;
   border: 3px solid #3498db;
+  z-index: 1;
+  /* Enable GPU acceleration */
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, width, height;
+}
+
+/* Larger touch target for mobile */
+.card-touch-target {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  /* Smooth inner transitions */
+  transition: border-radius 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .card-image {
@@ -662,6 +700,11 @@
   border-radius: 50%;
   background-size: cover;
   background-position: center;
+  pointer-events: none;
+  /* Smooth image transitions */
+  transition: 
+    height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    border-radius 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .card-content {
@@ -670,7 +713,11 @@
   left: 0;
   width: 100%;
   opacity: 0;
-  transition: all 0.5s ease;
+  /* Smoother content transitions */
+  transition: 
+    opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
 }
 
 .card-content h3 {
@@ -708,6 +755,11 @@
   z-index: 5;
   max-width: 140px;
   white-space: normal;
+  pointer-events: none;
+  /* Smooth label transitions */
+  transition: 
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 /* Top half above the photo */
@@ -720,13 +772,21 @@
 
 /* Active card center */
 .person-card.active {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1) !important;
   z-index: 100;
   border-radius: 20px;
   width: min(90vw, 500px);
   height: min(80vh, 600px);
   border: 3px solid #2980b9;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  /* Ensure smooth activation */
+  transition: 
+    transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    width 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    height 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    border-radius 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.4s ease,
+    border-color 0.4s ease;
 }
 
 .person-card.active .card-image {
@@ -739,6 +799,7 @@
   opacity: 1;
   background: #fff;
   padding: 20px;
+  pointer-events: auto;
 }
 
 .person-card.active .name-label {
@@ -748,6 +809,14 @@
 
 .circular-container.active .person-card:not(.active) {
   opacity: 0.3;
+  /* Smooth opacity transition for inactive cards */
+  transition: 
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    border-radius 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 0.4s ease,
+    border-color 0.4s ease;
 }
 
 /* 🔹 Hide name labels on mobile view completely */
@@ -761,10 +830,54 @@
     height: min(90vw, 420px);
   }
 
+  /* Increased spacing for mobile to prevent overlap */
   .person-card {
     transform: translate(-50%, -50%) rotate(calc(var(--angle) - 90deg))
-      translate(clamp(80px, 22vw, 150px))
+      translate(clamp(110px, 26vw, 180px))
       rotate(calc(-1 * (var(--angle) - 90deg)));
+    width: clamp(80px, 14vw, 150px);
+    height: clamp(80px, 14vw, 150px);
+  }
+  
+  /* Increase touch target size on mobile */
+  .card-touch-target {
+    width: 120%;
+    height: 120%;
+    margin: -10%;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .circular-container {
+    width: min(95vw, 380px);
+    height: min(95vw, 380px);
+  }
+  
+  .person-card {
+    transform: translate(-50%, -50%) rotate(calc(var(--angle) - 90deg))
+      translate(clamp(100px, 24vw, 160px))
+      rotate(calc(-1 * (var(--angle) - 90deg)));
+    width: clamp(70px, 12vw, 130px);
+    height: clamp(70px, 12vw, 130px);
+  }
+}
+
+/* Prevent text selection on touch devices */
+.person-card {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .person-card,
+  .card-image,
+  .card-content,
+  .name-label {
+    transition-duration: 0.1s !important;
   }
 }
 </style>
@@ -773,26 +886,79 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".person-card");
   const container = document.querySelector(".circular-container");
+  let activeCard = null;
+  let isAnimating = false;
 
   cards.forEach(card => {
     const angle = card.getAttribute("data-angle");
     card.style.setProperty("--angle", angle + "deg");
 
-    card.addEventListener("click", e => {
+    // Add click event to the touch target
+    const touchTarget = card.querySelector(".card-touch-target");
+    touchTarget.addEventListener("click", e => {
       e.stopPropagation();
-      cards.forEach(c => c.classList.remove("active"));
-      card.classList.add("active");
-      container.classList.add("active");
+      
+      // Prevent rapid consecutive clicks during animation
+      if (isAnimating) return;
+      
+      // If this card is already active, close it
+      if (card === activeCard) {
+        closeAllCards();
+      } else {
+        // Otherwise, activate this card
+        activateCard(card);
+      }
     });
   });
 
-  document.addEventListener("click", () => {
+  function activateCard(card) {
+    isAnimating = true;
+    
+    // Remove active class from all cards first
+    cards.forEach(c => c.classList.remove("active"));
+    
+    // Add active class to the clicked card
+    card.classList.add("active");
+    container.classList.add("active");
+    activeCard = card;
+    
+    // Reset animation lock after transition completes
+    setTimeout(() => {
+      isAnimating = false;
+    }, 700);
+  }
+
+  function closeAllCards() {
+    isAnimating = true;
+    
     cards.forEach(c => c.classList.remove("active"));
     container.classList.remove("active");
+    activeCard = null;
+    
+    // Reset animation lock after transition completes
+    setTimeout(() => {
+      isAnimating = false;
+    }, 500);
+  }
+
+  document.addEventListener("click", (e) => {
+    // Only close if clicking outside of any card and not during animation
+    if (!e.target.closest('.person-card') && !isAnimating) {
+      closeAllCards();
+    }
   });
+
+  // Prevent double-tap zoom on mobile
+  let lastTouchEnd = 0;
+  document.addEventListener('touchend', function (event) {
+    const now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+      event.preventDefault();
+    }
+    lastTouchEnd = now;
+  }, false);
 });
 </script>
-
   </main>
 
   <footer id="footer" class="footer position-relative dark-background">
