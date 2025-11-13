@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 /* ---- PNG Cursor ---- */
                 width: 65px;
                 height: 65px;
-                background-image: url('assets/img/logon.png');
+                background-image: url('./assets/img/logon.png');
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
 
