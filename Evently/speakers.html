@@ -794,13 +794,26 @@
   border-radius: 20px 20px 0 0;
 }
 
+.person-card.active .card-image {
+  height: 55%;                     /* decent size for full photo */
+  border-radius: 20px 20px 0 0;
+  background-size: contain;        /* shows full photo */
+  background-repeat: no-repeat;
+  background-position: top center; /* keeps the face visible */
+  background-color: #fff;
+  
+}
 .person-card.active .card-content {
-  top: clamp(150px, 35vh, 280px);
+  top: 55%;          /* start exactly below the image */
   opacity: 1;
   background: #fff;
   padding: 20px;
   pointer-events: auto;
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
+
 
 .person-card.active .name-label {
   opacity: 0;
