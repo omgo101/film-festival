@@ -302,7 +302,7 @@
       border-radius: 50%;
     }
 
-   
+
 
     /* Fix alignment issues */
     .about-page .content p:not(.lead) {
@@ -468,7 +468,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="schedule.html">Schedule</a></li>
           <li><a href="speakers.html">Festival people & team</a></li>
@@ -499,7 +499,8 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(https://images.unsplash.com/photo-1667238374285-ea0ad594ab0d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870);">
+    <div class="page-title dark-background"
+      style="background-image: url(https://images.unsplash.com/photo-1667238374285-ea0ad594ab0d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870);">
       <div class="container position-relative">
         <h1>About</h1>
         <p>Hyderabad International Short Film Festival (HISFF) is a 3‑day celebration of short films, culture and
@@ -587,7 +588,312 @@
         </div><!-- End Row -->
       </div>
     </section><!-- End About Section -->
+    <section id="news" class="news section">
+      <div class="container">
+        <div class="section-header">
+          <h2>News & Articles</h2>
+          <p>Latest coverage and announcements about HISFF 2025</p>
+        </div>
 
+        <div class="row gy-4" id="news-container">
+          <!-- News cards will be loaded instantly -->
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .news.section {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+      }
+
+      .section-header p {
+        font-size: 1.1rem;
+        color: #6c757d;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .news-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .news-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+      }
+
+      .news-icon-section {
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .icon-container {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        position: relative;
+        z-index: 2;
+        transition: all 0.3s ease;
+      }
+
+      .news-card:hover .icon-container {
+        transform: scale(1.1);
+      }
+
+      .icon-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+      }
+
+      .news-content {
+        padding: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .source-tag {
+        display: inline-block;
+        background: rgba(230, 57, 70, 0.1);
+        color: #e63946;
+        padding: 4px 10px;
+        border-radius: 16px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .news-content h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .news-content p {
+        color: #6c757d;
+        margin-bottom: 16px;
+        flex-grow: 1;
+        line-height: 1.5;
+        font-size: 0.9rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .news-link {
+        display: inline-flex;
+        align-items: center;
+        color: #e63946;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        margin-top: auto;
+        font-size: 0.9rem;
+      }
+
+      .news-link:hover {
+        color: #c1121f;
+      }
+
+      .news-link i {
+        margin-left: 6px;
+        transition: transform 0.3s ease;
+        font-size: 0.8rem;
+      }
+
+      .news-link:hover i {
+        transform: translate(2px, -2px);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .news.section {
+          padding: 60px 0;
+        }
+
+        .section-header h2 {
+          font-size: 2rem;
+        }
+
+        .news-icon-section {
+          height: 120px;
+        }
+
+        .icon-container {
+          width: 70px;
+          height: 70px;
+          font-size: 1.8rem;
+        }
+
+        .news-content {
+          padding: 16px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .news-icon-section {
+          height: 100px;
+        }
+
+        .icon-container {
+          width: 60px;
+          height: 60px;
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+
+    <script>
+      // Pre-defined optimized news data with instant loading
+      const newsData = [
+        {
+          url: "https://www.instagram.com/p/DQl0q5ugR1y/",
+          title: "Official Announcement",
+          description: "Festival logo unveiling and official announcement on Instagram",
+          source: "Instagram",
+          fallbackIcon: "bi-instagram",
+          color: "#E1306C"
+        },
+        {
+          url: "https://thewiretelugu.co.in/hyderabad-international-short-film-festival-logo-unveiled/",
+          title: "Logo Unveiling",
+          description: "Hyderabad International Short Film Festival logo unveiled coverage",
+          source: "The Wire Telugu",
+          fallbackIcon: "bi-newspaper",
+          color: "#2D3748"
+        },
+        {
+          url: "https://www.thehindu.com/news/cities/Hyderabad/hyderabad-international-short-film-festival-from-december-19-to-21/article70252002.ece",
+          title: "Festival Dates Announced",
+          description: "Hyderabad International Short Film Festival from December 19 to 21 announced",
+          source: "The Hindu",
+          fallbackIcon: "bi-newspaper",
+          color: "#E53E3E"
+        },
+        {
+          url: "https://timesofindia.indiatimes.com/city/hyderabad/telangana-govt-to-organise-a-three-day-hyd-intl-short-film-festival/articleshow/125170976.cms",
+          title: "Telangana Govt Initiative",
+          description: "Telangana govt to organise a three-day Hyd Intl Short Film Festival",
+          source: "Times of India",
+          fallbackIcon: "bi-newspaper",
+          color: "#2D5F8B"
+        },
+        {
+          url: "https://www.deccanchronicle.com/southern-states/telangana/tgfdc-backs-hyderabad-short-film-fest-dec-19-to-21-1915580",
+          title: "TGFDC Support",
+          description: "TGFDC backs Hyderabad short film fest from December 19 to 21",
+          source: "Deccan Chronicle",
+          fallbackIcon: "bi-newspaper",
+          color: "#744210"
+        },
+        {
+          url: "https://youtu.be/IESgmJJ_Y_M",
+          title: "Festival Promo Video",
+          description: "Official festival announcement and promotional video on YouTube",
+          source: "YouTube",
+          fallbackIcon: "bi-play-btn",
+          color: "#FF0000"
+        },
+        {
+          url: "https://www.indiatodayne.in/manipur/story/manipur-filmmaker-sunzu-bachaspatimayum-to-head-north-east-film-initiatives-at-hyderabad-short-film-festival-1299031-2025-11-04",
+          title: "North East Initiatives",
+          description: "Manipur filmmaker to head North East film initiatives at festival",
+          source: "India Today NE",
+          fallbackIcon: "bi-newspaper",
+          color: "#38A169"
+        },
+        {
+          url: "https://www.newindianexpress.com/states/telangana/2025/Nov/13/telangananorth-east-connect-to-held-be-in-two-phases",
+          title: "Telangana-North East Connect",
+          description: "Telangana–North East Connect to be held in two phases announced",
+          source: "New Indian Express",
+          fallbackIcon: "bi-newspaper",
+          color: "#2B6CB0"
+        }
+      ];
+
+      // Function to create a news card with icon only
+      function createNewsCard(newsItem) {
+        return `
+    <div class="col-lg-6 col-md-6">
+      <div class="news-card">
+        <div class="news-icon-section">
+          <div class="icon-background" style="background: ${newsItem.color};"></div>
+          <div class="icon-container" style="background: ${newsItem.color};">
+            <i class="bi ${newsItem.fallbackIcon}"></i>
+          </div>
+        </div>
+        <div class="news-content">
+          <div class="source-tag">${newsItem.source}</div>
+          <h4>${newsItem.title}</h4>
+          <p>${newsItem.description}</p>
+          <a href="${newsItem.url}" target="_blank" class="news-link">
+            Read More <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+      }
+
+      // Initialize the news section instantly
+      function initializeNewsSection() {
+        const container = document.getElementById('news-container');
+
+        // Load all cards instantly
+        newsData.forEach(newsItem => {
+          const cardHTML = createNewsCard(newsItem);
+          container.innerHTML += cardHTML;
+        });
+      }
+
+      // Initialize immediately
+      initializeNewsSection();
+    </script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- About DPSFS Section -->
     <section id="about-dpsfs" class="about-school-section section bg-light">
       <div class="container">
@@ -749,7 +1055,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d1.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 1" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 1"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -760,7 +1067,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d2.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 2" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 2"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -771,7 +1079,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d3.JPG?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 3" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 3"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -782,7 +1091,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d4.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 4" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 4"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -793,7 +1103,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d5.JPG?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 5" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 5"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -804,7 +1115,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d6.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 6" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 6"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -815,7 +1127,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d7.JPG?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 7" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 7"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -826,7 +1139,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d8.JPG?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 8" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 8"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -837,7 +1151,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d9.JPG?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 9" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 9"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -848,7 +1163,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d10.jpg?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 10" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 10"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -859,7 +1175,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d11.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 11" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 11"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -870,7 +1187,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d12.JPG?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 12" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 12"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -881,7 +1199,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d13.JPG?raw=true"
-                  class="img-fluid w-100"loading="lazy"  alt="Student photo 13" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 13"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -892,7 +1211,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d14.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 14" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 14"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -903,7 +1223,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d15.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 15" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 15"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -914,7 +1235,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d16.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 16" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 16"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
@@ -925,7 +1247,8 @@
               class="gallery-link">
               <div class="gallery-image position-relative overflow-hidden">
                 <img src="https://github.com/omgo101/film-festival/blob/main/Evently/assets/img/d17.JPG?raw=true"
-                  class="img-fluid w-100" loading="lazy" alt="Student photo 17" style="height: 200px; object-fit: cover;">
+                  class="img-fluid w-100" loading="lazy" alt="Student photo 17"
+                  style="height: 200px; object-fit: cover;">
               </div>
             </a>
           </div>
